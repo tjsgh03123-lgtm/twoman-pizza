@@ -4,7 +4,8 @@ import { getCart, cartCount, removeLine } from '../shared/lib/cart.js';
 import { cartTotals } from '../shared/lib/price.js';
 import { onChange } from '../shared/lib/storage.js';
 import { clearDiet, getDiet, setDiet, porkLineIds } from '../shared/lib/diet.js';
-import { t, languages, getLang, setLang, clearLang, loadI18n, money } from '../shared/lib/i18n.js';
+import { fetchSheet, applySheet } from '../shared/lib/sheet.js';
+import { t, languages, getLang, setLang, clearLang, loadI18n, mergeContent, money } from '../shared/lib/i18n.js';
 import { menuPage } from './pages/menu.js';
 import { itemPage } from './pages/item.js';
 import { halfHalfPage } from './pages/half-half.js';
@@ -25,6 +26,19 @@ export async function start(root, { dataBase = './data/' } = {}) {
   try {
     await loadI18n(dataBase);
     data = await loadData(dataBase);
+    // 사장님이 고친 구글 시트 값이 있으면 덮어쓴다 (읽기 실패 시 사이트 기본 데이터로 계속)
+    try {
+      const res = await fetch(`${dataBase}sheet.json`);
+      const cfg = res.ok ? await res.json() : null;
+      if (cfg?.enabled) {
+        const tabs = await fetchSheet(cfg);
+        if (tabs) {
+          const merged = applySheet(data, tabs);
+          data = merged.data;
+          mergeContent(merged.content);
+        }
+      }
+    } catch { /* 시트를 못 읽어도 기본 메뉴로 진행 */ }
   } catch (e) {
     mount(root, h('div', { class: 'empty' }, `메뉴를 불러오지 못했어요. / Could not load the menu. (${e.message})`, h('p', { class: 'hint' }, 'file:// 로 열면 안 되고 웹 주소로 열어야 해요. / Open via a web address, not file://')));
     return;

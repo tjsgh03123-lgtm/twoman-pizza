@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "spreadsheetId": "1q7w5Y2jbSvEqnf9mNy0E3dnUFB8IojBqZ0pErWAfsaw",
+  "tabs": { "menu": "메뉴", "options": "옵션", "half": "반반", "settings": "설정", "dict": "번역사전" },
+  "timeoutMs": 6000
+}

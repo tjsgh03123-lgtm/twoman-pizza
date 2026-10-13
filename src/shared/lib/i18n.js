@@ -17,6 +17,11 @@ export async function loadI18n(base) {
   return dict;
 }
 
+// 시트에서 읽은 번역을 합친다 (시트 값이 기본 번역보다 우선)
+export function mergeContent(map) {
+  for (const [k, v] of Object.entries(map || {})) dict.content[k] = { ...(dict.content[k] || {}), ...v };
+}
+
 export const languages = () => dict.languages;
 
 export function getLang() {
