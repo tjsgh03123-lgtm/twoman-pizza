@@ -56,3 +56,4 @@
 .show-confirm { margin-top: 16px; padding: 14px; text-align: center; border-radius: var(--radius); background: var(--brand); color: var(--brand-ink); font-size: 1.1rem; }
 .show-confirm p { margin: 4px 0 0; font-size: .95rem; }
 .gate-notice { margin: 0; padding: 12px 14px; border-radius: var(--radius); background: color-mix(in srgb, var(--brand) 12%, var(--bg)); font-weight: 700; }
+.disclaimer { max-width: 640px; margin: 0 auto; padding: 8px 16px 110px; text-align: center; font-size: .75rem; color: var(--muted); }

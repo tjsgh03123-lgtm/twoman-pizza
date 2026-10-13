@@ -46,7 +46,8 @@ export async function start(root, { dataBase = './data/' } = {}) {
       d ? h('p', { class: 'banner' }, t('app.banner', { m: money(d.amount.M), l: money(d.amount.L) })) : null);
   };
 
-  mount(root, chrome, view, cartBar, toastEl);
+  const footer = h('footer', { class: 'disclaimer' });
+  mount(root, chrome, view, footer, cartBar, toastEl);
 
   let timer;
   const ctx = {
@@ -87,10 +88,16 @@ export async function start(root, { dataBase = './data/' } = {}) {
     h('button', { type: 'button', class: 'btn', onclick: () => { setDiet('any'); route(); } }, t('gate.diet.any')),
     h('p', { class: 'hint' }, t('gate.diet.hint')));
 
+  const drawFooter = () => {
+    // 언어를 고르기 전에는 한국어·영어를 함께 보여 준다
+    footer.textContent = getLang() ? t('disclaimer') : `${t('disclaimer')} / This is not the official Twoman Pizza website.`;
+  };
+
   const route = () => {
     disposers.forEach((d) => d());
     disposers = [];
     drawChrome();
+    drawFooter();
     if (!getLang()) {
       mount(view, langGate());
       cartBar.hidden = true;

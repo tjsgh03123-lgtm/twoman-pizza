@@ -574,6 +574,13 @@
    "ja": "豚肉を使っていないピザだけを選んで表示できます。",
    "ar": "يمكنك اختيار عرض البيتزا الخالية من لحم الخنزير فقط.",
    "vi": "Bạn có thể chỉ xem các loại pizza không chứa thịt heo."
+  },
+  "disclaimer": {
+   "ko": "이 사이트는 투맨피자 공식 사이트가 아니며, 메뉴 선택(주문)을 돕기 위한 사이트입니다.",
+   "en": "This is not the official Twoman Pizza website. It is only a tool to help you choose your order.",
+   "ja": "このサイトはトゥーマンピザの公式サイトではなく、メニュー選び(ご注文)をお手伝いするためのサイトです。",
+   "ar": "هذا ليس الموقع الرسمي لتومان بيتزا، بل أداة تساعدك على اختيار طلبك فقط.",
+   "vi": "Đây không phải trang web chính thức của Twoman Pizza, chỉ là công cụ giúp bạn chọn món để đặt hàng."
   }
  },
  "content": {

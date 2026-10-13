@@ -34,6 +34,7 @@ with sync_playwright() as p:
 
     page.goto(f"{BASE}/index.html"); page.wait_for_selector(".gate")
     check(page.locator(".gate .btn").all_inner_texts() == ["한국어", "English", "日本語", "العربية", "Tiếng Việt"], "첫 화면: 언어 선택 (각 언어 표기)")
+    check("공식 사이트가 아니며" in page.inner_text(".disclaimer"), "언어 선택 화면: 공식 사이트 아님 안내")
     shot(page, "00-lang")
     # 영어 / 아랍어 / 일본어 확인
     for lang, label, expect, rtl in (("en", "English", "Waterfall Cheese", False), ("ar", "العربية", "بيتزا الجبن الشلال", True), ("ja", "日本語", "ウォーターフォール チーズ", False), ("vi", "Tiếng Việt", "Waterfall Cheese (Phô mai thác đổ)", False)):
@@ -52,6 +53,7 @@ with sync_playwright() as p:
     check(page.locator(".gate .btn").all_inner_texts() == ["돼지고기 메뉴 제외", "상관없다"], "첫 화면: 돼지고기 메뉴 제외 / 상관없다")
     shot(page, "00-gate")
     page.click(".gate .btn.primary"); page.wait_for_selector(".menu-card")
+    check("공식 사이트가 아니며" in page.inner_text(".disclaimer"), "메뉴 화면: 공식 사이트 아님 안내")
     check(page.locator(".tab").first.inner_text() == "피자", "탭 순서: 피자가 먼저")
     names = page.locator(".menu-name").all_inner_texts()
     check(not any(k in n for n in names for k in ("페퍼로니", "베이컨", "콤비네이션", "포테이토", "토핑폭탄")) and "폭포수 치즈" in names, "돼지고기 제외: 페퍼로니·베이컨·햄 메뉴 숨김 " + str(names))
