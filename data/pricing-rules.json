@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "orderType": "takeout-only",
+  "note": "포장 전용 사이트(QR 코드로 접속). 매장·배달 정보는 사이트에 두지 않음(사용자 요청 2026-10-13).",
+  "takeoutDiscount": {
+    "mode": "perOrder",
+    "amount": {
+      "M": 1500,
+      "L": 3000
+    },
+    "appliesToTypes": [
+      "pizza",
+      "half-half"
+    ],
+    "appliesToItemIds": [
+      "signature-topping-bomb"
+    ],
+    "status": "user_confirmed",
+    "source": "사용자 확인(2026-10-13): 포장 시 L 3,000원, M 1,500원 할인. 한 주문 전체에서 1회만 적용(2026-10-13 사용자 확인)",
+    "note": "한 주문당 1회만 할인. 금액은 주문에 담긴 피자 중 가장 큰 크기 기준(L이 하나라도 있으면 3,000원, 없고 M만 있으면 1,500원) — 사용자 확인(2026-10-13). 시그니처(L 전용)는 L 기준. 사이드·음료·소스는 대상 아님."
+  }
+}

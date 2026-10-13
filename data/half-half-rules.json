@@ -1,0 +1,178 @@
+{
+  "version": 3,
+  "status": "confirmed",
+  "summary": "반반피자는 투맨 메뉴 2가지를 골라 조합. 기준가는 공식 홈페이지 표기('20,900~' / '24,900~'), 맛별 추가금은 매장 POS 화면 값(M/L 동일). 두 맛의 추가금은 합산한다(사용자 확인).",
+  "slots": 2,
+  "split": "half",
+  "sizes": [
+    "M",
+    "L"
+  ],
+  "basePrice": {
+    "M": 20900,
+    "L": 24900,
+    "priceType": "from",
+    "status": "hq_listed",
+    "source": "https://www.twomanfnc.com/21"
+  },
+  "calculation": {
+    "formula": "기준가[size] + 추가금[맛1] + 추가금[맛2]",
+    "combine": "sum",
+    "combineOptions": [
+      "sum",
+      "max"
+    ],
+    "combineStatus": "user_confirmed",
+    "note": "두 맛 추가금 합산 (사용자 확인 2026-10-13). 방식은 설정값으로 두어 관리자에서 바꿀 수 있게 설계.",
+    "sizeRule": "M/L 추가금 동일 (사용자 확인 2026-10-13)",
+    "examples": [
+      {
+        "flavors": [
+          "pizza-bulgogi-bomb",
+          "pizza-diabulsae"
+        ],
+        "size": "L",
+        "price": 30900
+      },
+      {
+        "flavors": [
+          "pizza-cheese-waterfall",
+          "pizza-pepperoni-bomb"
+        ],
+        "size": "M",
+        "price": 21900
+      }
+    ]
+  },
+  "eligibleFlavorsStatus": "user_confirmed",
+  "eligibleFlavorsNote": "POS 선택 화면에 피자 10종이 표시되고 토핑폭탄 투맨피자(시그니처)는 없음 -> 시그니처는 반반 대상에서 제외",
+  "excludedItems": [
+    {
+      "itemId": "signature-topping-bomb",
+      "reason": "POS 피자선택 화면에 없음"
+    }
+  ],
+  "flavors": [
+    {
+      "itemId": "pizza-cheese-waterfall",
+      "name": "폭포수 치즈",
+      "eligible": true,
+      "surcharge": {
+        "M": 0,
+        "L": 0
+      },
+      "status": "user_confirmed",
+      "source": "POS 화면에 가격 표시 없음 + 사용자 확인(2026-10-13): 추가금 없음"
+    },
+    {
+      "itemId": "pizza-pepperoni-bomb",
+      "name": "페퍼로니 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 1000,
+        "L": 1000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-super-combination-bomb",
+      "name": "슈퍼 콤비네이션 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 1000,
+        "L": 1000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-sweet-potato-bomb",
+      "name": "스위트 고구마 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 1000,
+        "L": 1000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-bacon-cheddar-bomb",
+      "name": "베이컨 체다 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 1000,
+        "L": 1000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-double-potato-bomb",
+      "name": "더블 포테이토 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 1500,
+        "L": 1500
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-bulgogi-bomb",
+      "name": "불향가득 리얼 불고기 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 2000,
+        "L": 2000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-garlic-chicken-kingshrimp-bomb",
+      "name": "갈릭 치킨 킹 쉬림프 폭탄",
+      "eligible": true,
+      "surcharge": {
+        "M": 2000,
+        "L": 2000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-bacon-kingshrimp-potato",
+      "name": "베이컨 킹 쉬림프 포테이토",
+      "eligible": true,
+      "surcharge": {
+        "M": 3000,
+        "L": 3000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    },
+    {
+      "itemId": "pizza-diabulsae",
+      "name": "디아불새",
+      "eligible": true,
+      "surcharge": {
+        "M": 4000,
+        "L": 4000
+      },
+      "status": "user_confirmed",
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공) / M·L 동일 금액은 사용자 확인(2026-10-13)"
+    }
+  ],
+  "evidence": [
+    {
+      "source": "매장 POS '사이드 메뉴 > 속성/선택메뉴 > 피자선택' 화면 사진(2026-10-13, 사용자 제공)",
+      "text": "맛별 추가금 표시값: 불고기 2,000 / 베이컨킹쉬림프포테이토 3,000 / 페퍼로니 1,000 / 폭포수치즈 표시 없음 / 스위트고구마 1,000 / 갈릭치킨킹쉬림프 2,000 / 베이컨체다 1,000 / 슈퍼콤비네이션 1,000 / 더블포테이토 1,500 / 디아불새 4,000"
+    },
+    {
+      "source": "사용자 확인(2026-10-13)",
+      "text": "M/L 동일 가격, 두 맛을 고르면 추가금 합산, 폭포수 치즈는 추가금 없음"
+    }
+  ],
+  "verificationIds": []
+}

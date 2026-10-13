@@ -1,0 +1,1040 @@
+{
+  "version": 1,
+  "currency": "KRW",
+  "orderType": "takeout",
+  "generatedAt": "2026-10-13",
+  "statusLegend": {
+    "hq_listed": "본사 공식 홈페이지 표기(수원인계점 적용 미확인)",
+    "user_confirmed": "사용자가 직접 확정한 값 (매장 POS 화면 사진 포함)",
+    "conflict": "출처 간 값 불일치 - 확정 금지",
+    "reference": "타 매장/후기 참고값 - 확정 아님",
+    "needs_check": "확인된 값 없음"
+  },
+  "categories": [
+    {
+      "id": "pizza",
+      "name": "피자",
+      "order": 1
+    },
+    {
+      "id": "half-half",
+      "name": "반반피자",
+      "order": 2
+    },
+    {
+      "id": "side",
+      "name": "사이드",
+      "order": 3
+    },
+    {
+      "id": "drink",
+      "name": "음료",
+      "order": 4
+    }
+  ],
+  "orderOptionGroupIds": [
+    "sauce"
+  ],
+  "items": [
+    {
+      "id": "signature-topping-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "토핑폭탄 투맨피자",
+      "aliases": [
+        "SIGNATURE 토핑폭탄투맨피자"
+      ],
+      "description": "그동안 투맨에서 제일 많이 나간 메뉴 4가지를 합쳤습니다!",
+      "descriptionStatus": "hq_listed",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/fd44233e0496c.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/89f90f198f303.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지(배너 이미지 1장 추가 존재). 매핑 육안 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "L",
+          "price": 30900,
+          "status": "hq_listed"
+        }
+      ],
+      "composedOf": [
+        "pizza-pepperoni-bomb",
+        "pizza-bacon-cheddar-bomb",
+        "pizza-double-potato-bomb",
+        "pizza-bulgogi-bomb"
+      ],
+      "composedOfStatus": "user_confirmed",
+      "composedOfSource": "사용자 확인(2026-10-13): 페퍼로니, 베이컨체다, 포테이토, 불고기 (포테이토는 더블 포테이토 폭탄으로 해석)",
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "notes": [
+        "L 사이즈 전용",
+        "음료 증정 없음(사용자 확인 2026-10-13). 타 매장 배달앱의 '음료 1.5L 무료' 문구는 수원인계점에 적용되지 않음"
+      ],
+      "order": 1,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "페퍼로니",
+        "베이컨",
+        "체다치즈",
+        "마요네즈",
+        "감자",
+        "랜치소스",
+        "리얼 불고기",
+        "버섯",
+        "불고기 소스"
+      ],
+      "ingredientsStatus": "derived",
+      "ingredientsNote": "구성 메뉴 4종의 토핑 재료 합집합(자동 계산)",
+      "tags": [
+        "signature"
+      ]
+    },
+    {
+      "id": "half-half",
+      "category": "half-half",
+      "type": "half-half",
+      "name": "반반피자",
+      "aliases": [
+        "투맨 반반피자",
+        "시그니처 반반"
+      ],
+      "description": "투맨에서 가장 맛있는 메뉴 2가지를 조합해 보세요.",
+      "descriptionStatus": "hq_listed",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/a65e24c2ec754.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/f682c1ef59558.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지(배너 이미지 1장 추가 존재). 매핑 육안 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 20900,
+          "priceType": "from",
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 24900,
+          "priceType": "from",
+          "status": "hq_listed"
+        }
+      ],
+      "rulesRef": "half-half-rules.json",
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "notes": [
+        "표시 가격은 '~부터' 기준가. 맛별 추가금은 half-half-rules.json에서 관리"
+      ],
+      "order": 2,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "pizza-cheese-waterfall",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "폭포수 치즈",
+      "aliases": [
+        "폭포수 치즈 피자"
+      ],
+      "description": "치즈 천국. 극락 주의",
+      "descriptionStatus": "reference",
+      "descriptionSource": "타 매장(장현점/은계점) 배달앱 문구 - 수원인계점 사용 여부 확인 필요",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/5ffdddd388426.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/ff86eba18a0c4.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 19900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 23900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 3,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "체다치즈"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-pepperoni-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "페퍼로니 폭탄",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "descriptionSource": null,
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20260804/e5dd4a2e4eecc.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/c8ef12fd3a1c5.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 20900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 24900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 4,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "페퍼로니"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-super-combination-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "슈퍼 콤비네이션 폭탄",
+      "aliases": [
+        "슈퍼콤비네이션 폭탄"
+      ],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "descriptionSource": null,
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20260804/ee6e44f137874.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/929335ed2d732.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 20900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 24900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 5,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "페퍼로니(조각당 2개)",
+        "햄",
+        "불고기 토핑",
+        "올리브",
+        "옥수수",
+        "버섯",
+        "파프리카"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-sweet-potato-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "스위트 고구마 폭탄",
+      "aliases": [
+        "스위트 고구마 폭탄 피자"
+      ],
+      "description": "달콤함 주의",
+      "descriptionStatus": "reference",
+      "descriptionSource": "타 매장(장현점/은계점) 배달앱 문구 - 수원인계점 사용 여부 확인 필요",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20260305/b8e8e9a5658c4.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/b23f579d24770.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 20900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 24900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 6,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "고구마무스",
+        "베이컨"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-bacon-cheddar-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "베이컨 체다 폭탄",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "descriptionSource": null,
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20260804/2d5c94dc5943f.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/7b42187e2887c.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 20900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 24900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 7,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "베이컨",
+        "체다치즈",
+        "마요네즈"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-double-potato-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "더블 포테이토 폭탄",
+      "aliases": [
+        "더블포테이토 폭탄피자"
+      ],
+      "description": "포테이토 폭탄 주의",
+      "descriptionStatus": "reference",
+      "descriptionSource": "타 매장(장현점/은계점) 배달앱 문구 - 수원인계점 사용 여부 확인 필요",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/84bf099f189d1.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/edf98d91891f4.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 21400,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 25400,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 8,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "감자",
+        "베이컨",
+        "마요네즈",
+        "랜치소스"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-bulgogi-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "불향가득 리얼 불고기 폭탄",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "descriptionSource": null,
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/a5c991e0790ad.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/80a97a12be5fb.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 21900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 25900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 9,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "리얼 불고기",
+        "버섯",
+        "불고기 소스",
+        "마요네즈"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-garlic-chicken-kingshrimp-bomb",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "갈릭 치킨 킹 쉬림프 폭탄",
+      "aliases": [
+        "갈릭 치킨 킹쉬림프 폭탄피자"
+      ],
+      "description": "국내산 닭고기 폭탄 주의",
+      "descriptionStatus": "reference",
+      "descriptionSource": "타 매장(장현점/은계점) 배달앱 문구 - 수원인계점 사용 여부 확인 필요",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20260804/bd692dabb7aa0.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/90ed189805109.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 21900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 25900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 10,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "새우",
+        "다이스 닭고기",
+        "갈릭소스",
+        "체다치즈"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-bacon-kingshrimp-potato",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "베이컨 킹 쉬림프 포테이토",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "descriptionSource": null,
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20260305/a37331f69c975.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/501b06a8ae0a3.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 22900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 26900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 11,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "감자",
+        "새우",
+        "베이컨",
+        "체다치즈",
+        "마요네즈"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "pizza-diabulsae",
+      "category": "pizza",
+      "type": "pizza",
+      "name": "디아불새",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "descriptionSource": null,
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/bbd15980aed83.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/96bb4f4aaf342.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "M",
+          "price": 23900,
+          "status": "hq_listed"
+        },
+        {
+          "id": "L",
+          "price": 27900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [
+        "crust",
+        "topping-add"
+      ],
+      "order": 12,
+      "visible": true,
+      "soldOut": false,
+      "ingredients": [
+        "모짜렐라치즈",
+        "새우",
+        "다이스 닭고기",
+        "옥수수",
+        "버섯",
+        "파프리카",
+        "디아블로소스(매운맛)"
+      ],
+      "ingredientsStatus": "user_confirmed"
+    },
+    {
+      "id": "side-cheese-oven-spaghetti",
+      "category": "side",
+      "type": "side",
+      "name": "치즈 오븐 스파게티",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/8e86d9c94a09f.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/f85b22950fbd1.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": null,
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 13,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-combi-cheese-oven-spaghetti",
+      "category": "side",
+      "type": "side",
+      "name": "콤비 치즈 오븐 스파게티",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/b1d5d995790f0.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/ff77e44836716.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": null,
+          "price": 6900,
+          "status": "user_confirmed",
+          "note": "공식 홈페이지 블록 간 불일치(6,900/5,900) -> 사용자가 6,900원으로 확정(2026-10-13)"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 14,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-bacon-cream-spaghetti",
+      "category": "side",
+      "type": "side",
+      "name": "베이컨 크림 스파게티",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/4b04ae20b0ff7.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/879e80662d738.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": null,
+          "price": 6900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 15,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-kingshrimp-cream-spaghetti",
+      "category": "side",
+      "type": "side",
+      "name": "킹 쉬림프 크림 스파게티",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/f0d29eba4356d.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/bb3384c92810a.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": null,
+          "price": 7900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 16,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-shrimp-ring",
+      "category": "side",
+      "type": "side",
+      "name": "새우링",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/c1709e5c57aa5.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/7d98ac35755a9.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "6pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 17,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-cheese-ball",
+      "category": "side",
+      "type": "side",
+      "name": "치즈볼",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/a6c43e90382c1.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/9bfa10720185d.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "6pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 18,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-cheese-stick",
+      "category": "side",
+      "type": "side",
+      "name": "치즈스틱",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/6a3d6da02942a.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/2f5f02f6ea441.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "6pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 19,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-french-fries",
+      "category": "side",
+      "type": "side",
+      "name": "감자튀김",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/b3013b00bd3ae.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/9a9232a85c459.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "180g",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 20,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-chicken-karaage",
+      "category": "side",
+      "type": "side",
+      "name": "치킨 가라아게",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/a14bf7ca35002.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/e77fd0e2d5a52.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "6pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 21,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-chicken-tender",
+      "category": "side",
+      "type": "side",
+      "name": "치킨텐더",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/133a09a2f2a67.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/e18d88db2ba82.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "6pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 22,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-buffalo-wings",
+      "category": "side",
+      "type": "side",
+      "name": "버팔로윙",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/7cb4599ea21e6.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/871ab8843f5d7.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13)."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "6pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 23,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "side-jumbo-drumstick",
+      "category": "side",
+      "type": "side",
+      "name": "점보닭다리",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251202/b8e1a98247991.png",
+        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251212/871ab8843f5d7.png",
+        "status": "needs_check",
+        "note": "본사 공식 홈페이지 CDN 이미지. 페이지 내 나열 순서로 메뉴와 매핑(육안 대조 전). 수원인계점 실제 사진 여부 확인 필요. 사용은 비상업 모의 사이트라 문제 없다는 사용자 판단(2026-10-13). 블록2 이미지가 버팔로윙과 동일(중복) - 블록1 이미지를 우선 참조."
+      },
+      "sizes": [
+        {
+          "id": "DEFAULT",
+          "unit": "2pcs",
+          "price": 5900,
+          "status": "hq_listed"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 24,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "drink-cola",
+      "category": "drink",
+      "type": "drink",
+      "name": "코카콜라",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": null,
+        "altSourceUrl": null,
+        "status": "needs_check",
+        "note": "이미지 없음 - 필요 시 확인"
+      },
+      "sizes": [
+        {
+          "id": "500ml",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS 음료 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "1.25L",
+          "price": 3000,
+          "status": "user_confirmed",
+          "source": "매장 POS 음료 화면 사진(2026-10-13, 사용자 제공)"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 25,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "drink-sprite",
+      "category": "drink",
+      "type": "drink",
+      "name": "스프라이트",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": null,
+        "altSourceUrl": null,
+        "status": "needs_check",
+        "note": "이미지 없음 - 필요 시 확인"
+      },
+      "sizes": [
+        {
+          "id": "500ml",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS 음료 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "1.25L",
+          "price": 3000,
+          "status": "user_confirmed",
+          "source": "매장 POS 음료 화면 사진(2026-10-13, 사용자 제공)"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 26,
+      "visible": true,
+      "soldOut": false
+    },
+    {
+      "id": "drink-zero-cola",
+      "category": "drink",
+      "type": "drink",
+      "name": "제로 코카콜라",
+      "aliases": [],
+      "description": null,
+      "descriptionStatus": "needs_check",
+      "image": {
+        "localPath": null,
+        "sourceUrl": null,
+        "altSourceUrl": null,
+        "status": "needs_check",
+        "note": "이미지 없음 - 필요 시 확인"
+      },
+      "sizes": [
+        {
+          "id": "1.25L",
+          "price": 3000,
+          "status": "user_confirmed",
+          "source": "매장 POS 음료 화면 사진(2026-10-13, 사용자 제공)"
+        }
+      ],
+      "optionGroupIds": [],
+      "notes": [],
+      "order": 27,
+      "visible": true,
+      "soldOut": false
+    }
+  ]
+}

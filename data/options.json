@@ -1,0 +1,234 @@
+{
+  "version": 2,
+  "sizes": [
+    {
+      "id": "M",
+      "label": "미디엄(M)"
+    },
+    {
+      "id": "L",
+      "label": "라지(L)"
+    },
+    {
+      "id": "DEFAULT",
+      "label": "기본"
+    },
+    {
+      "id": "500ml",
+      "label": "500ml"
+    },
+    {
+      "id": "1.25L",
+      "label": "1.25L"
+    }
+  ],
+  "optionGroups": [
+    {
+      "id": "crust",
+      "name": "크러스트(엣지) 변경",
+      "type": "single",
+      "required": false,
+      "choices": [
+        {
+          "id": "crust-cheese",
+          "name": "치즈 크러스트",
+          "price": 3000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "crust-cheddar",
+          "name": "체다 크러스트",
+          "price": 3000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "description": "누드 크러스트",
+          "descriptionStatus": "user_confirmed"
+        },
+        {
+          "id": "crust-sweet-potato",
+          "name": "고구마 크러스트",
+          "price": 3000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "description": "누드 크러스트",
+          "descriptionStatus": "user_confirmed"
+        },
+        {
+          "id": "crust-golden",
+          "name": "황금 크러스트",
+          "price": 6000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "description": "체다, 고구마무스",
+          "descriptionStatus": "user_confirmed"
+        },
+        {
+          "id": "crust-double",
+          "name": "더블 크러스트",
+          "price": 6000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "description": "치즈, 고구마무스",
+          "descriptionStatus": "user_confirmed"
+        }
+      ],
+      "note": "M/L 동일 금액 (사용자 확인 2026-10-13)"
+    },
+    {
+      "id": "topping-add",
+      "name": "토핑 추가",
+      "type": "multi-quantity",
+      "required": false,
+      "choices": [
+        {
+          "id": "topping-cheese-80",
+          "name": "치즈 추가",
+          "price": 1500,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "80g"
+        },
+        {
+          "id": "topping-cheese-100",
+          "name": "치즈 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "100g"
+        },
+        {
+          "id": "topping-cheddar-80",
+          "name": "체다치즈 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "80g"
+        },
+        {
+          "id": "topping-bulgogi-50",
+          "name": "불고기 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "50g"
+        },
+        {
+          "id": "topping-pepperoni",
+          "name": "페퍼로니 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "topping-bacon",
+          "name": "베이컨 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "topping-corn",
+          "name": "옥수수 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "topping-olive",
+          "name": "올리브 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "topping-veggie",
+          "name": "야채 추가 (양파, 파프리카, 새송이)",
+          "price": 1000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "topping-shrimp-2",
+          "name": "새우 추가",
+          "price": 1000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "2마리"
+        },
+        {
+          "id": "topping-shrimp-4",
+          "name": "새우 추가",
+          "price": 2000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "4마리"
+        },
+        {
+          "id": "topping-shrimp-8",
+          "name": "새우 추가",
+          "price": 4000,
+          "status": "user_confirmed",
+          "source": "매장 POS '토핑추가' 화면 사진(2026-10-13, 사용자 제공)",
+          "unit": "8마리"
+        }
+      ],
+      "note": "M/L 동일 금액 (사용자 확인 2026-10-13)"
+    },
+    {
+      "id": "sauce",
+      "name": "소스·피클 추가",
+      "type": "multi-quantity",
+      "required": false,
+      "scope": "order",
+      "choices": [
+        {
+          "id": "sauce-hot",
+          "name": "핫소스",
+          "price": 100,
+          "status": "user_confirmed",
+          "source": "매장 POS '소스' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "sauce-garlic-dipping",
+          "name": "갈릭디핑소스",
+          "price": 300,
+          "status": "user_confirmed",
+          "source": "매장 POS '소스' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "sauce-ranch",
+          "name": "랜치소스",
+          "price": 800,
+          "status": "user_confirmed",
+          "source": "매장 POS '소스' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "sauce-pickle",
+          "name": "피클",
+          "price": 300,
+          "status": "user_confirmed",
+          "source": "매장 POS '소스' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "sauce-parmesan",
+          "name": "파마산치즈",
+          "price": 300,
+          "status": "user_confirmed",
+          "source": "매장 POS '소스' 화면 사진(2026-10-13, 사용자 제공)"
+        },
+        {
+          "id": "sauce-jalapeno-pickle",
+          "name": "할라피뇨피클",
+          "price": 500,
+          "status": "user_confirmed",
+          "source": "매장 POS '소스' 화면 사진(2026-10-13, 사용자 제공)"
+        }
+      ],
+      "note": "메뉴가 아니라 주문 단위로 추가하는 옵션(menu.json의 orderOptionGroupIds에서 참조)"
+    }
+  ],
+  "unconfirmedOptionTopics": [
+    "요청사항(수저 불필요 등) 입력 방식"
+  ]
+}
