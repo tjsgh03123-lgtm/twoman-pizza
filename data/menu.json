@@ -706,38 +706,6 @@
       "soldOut": false
     },
     {
-      "id": "side-tteokbokki",
-      "category": "side",
-      "type": "side",
-      "name": "옛날 떡볶이",
-      "aliases": [],
-      "description": null,
-      "descriptionStatus": "needs_check",
-      "image": {
-        "localPath": null,
-        "sourceUrl": "https://cdn.imweb.me/thumbnail/20251212/383d530c31894.png",
-        "altSourceUrl": "https://cdn.imweb.me/thumbnail/20251202/2bb482074edc1.png",
-        "status": "needs_check",
-        "note": "본사 공식 홈페이지 사이드 페이지 CDN 이미지"
-      },
-      "sizes": [
-        {
-          "id": "DEFAULT",
-          "unit": null,
-          "price": 6900,
-          "status": "hq_listed",
-          "source": "본사 공식 홈페이지 /23 (12/12 이미지 블록 6,900원, 12/02 블록은 5,900원 — 불일치, 최신 블록 기준)"
-        }
-      ],
-      "optionGroupIds": [],
-      "notes": [
-        "신메뉴(2026-10-27 사용자 요청). 본사 페이지 가격이 블록마다 달라(5,900/6,900) 매장 확인 필요"
-      ],
-      "order": 17,
-      "visible": true,
-      "soldOut": false
-    },
-    {
       "id": "side-shrimp-ring",
       "category": "side",
       "type": "side",
@@ -762,7 +730,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 18,
+      "order": 17,
       "visible": true,
       "soldOut": false
     },
@@ -791,7 +759,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 19,
+      "order": 18,
       "visible": true,
       "soldOut": false
     },
@@ -820,7 +788,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 20,
+      "order": 19,
       "visible": true,
       "soldOut": false
     },
@@ -849,7 +817,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 21,
+      "order": 20,
       "visible": true,
       "soldOut": false
     },
@@ -878,7 +846,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 22,
+      "order": 21,
       "visible": true,
       "soldOut": false
     },
@@ -907,7 +875,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 23,
+      "order": 22,
       "visible": true,
       "soldOut": false
     },
@@ -936,7 +904,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 24,
+      "order": 23,
       "visible": true,
       "soldOut": false
     },
@@ -965,7 +933,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 25,
+      "order": 24,
       "visible": true,
       "soldOut": false
     },
@@ -1000,7 +968,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 26,
+      "order": 25,
       "visible": true,
       "soldOut": false
     },
@@ -1035,7 +1003,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 27,
+      "order": 26,
       "visible": true,
       "soldOut": false
     },
@@ -1064,7 +1032,7 @@
       ],
       "optionGroupIds": [],
       "notes": [],
-      "order": 28,
+      "order": 27,
       "visible": true,
       "soldOut": false
     }

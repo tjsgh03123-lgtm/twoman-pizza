@@ -1,1122 +1,1116 @@
 {
-  "version": 1,
-  "note": "고객 화면 다국어 문구. ui: 화면 문구(키), content: 메뉴·옵션 문구(한국어 원문이 키). 없는 번역은 한국어로 표시된다.",
-  "languages": [
-    {
-      "id": "ko",
-      "label": "한국어",
-      "dir": "ltr"
-    },
-    {
-      "id": "en",
-      "label": "English",
-      "dir": "ltr"
-    },
-    {
-      "id": "ja",
-      "label": "日本語",
-      "dir": "ltr"
-    },
-    {
-      "id": "ar",
-      "label": "العربية",
-      "dir": "rtl"
-    },
-    {
-      "id": "vi",
-      "label": "Tiếng Việt",
-      "dir": "ltr"
-    }
-  ],
-  "ui": {
-    "app.title": {
-      "ko": "투맨피자 포장 주문",
-      "en": "Twoman Pizza Takeout",
-      "ja": "トゥーマンピザ テイクアウト注文",
-      "ar": "طلب سفري - تومان بيتزا",
-      "vi": "Đặt món mang đi - Twoman Pizza"
-    },
-    "app.banner": {
-      "ko": "포장 전용 · 주문 1회 할인: 라지 피자가 있으면 {l}, 미디엄만 있으면 {m}",
-      "en": "Takeout only · One discount per order: {l} off if it includes a Large pizza, {m} off if Medium only",
-      "ja": "テイクアウト専用・ご注文1回につき割引: ラージピザを含む場合 {l}、ミディアムのみの場合 {m}",
-      "ar": "للطلب السفري فقط · خصم واحد لكل طلب: {l} إذا تضمّن بيتزا كبيرة، و{m} إذا كانت وسط فقط",
-      "vi": "Chỉ mang đi · Giảm giá 1 lần cho mỗi đơn: {l} nếu có pizza cỡ lớn, {m} nếu chỉ có cỡ vừa"
-    },
-    "app.loading": {
-      "ko": "메뉴를 불러오는 중…",
-      "en": "Loading menu…",
-      "ja": "メニューを読み込み中…",
-      "ar": "جارٍ تحميل القائمة…",
-      "vi": "Đang tải thực đơn…"
-    },
-    "app.loadError": {
-      "ko": "메뉴를 불러오지 못했어요.",
-      "en": "Could not load the menu.",
-      "ja": "メニューを読み込めませんでした。",
-      "ar": "تعذّر تحميل القائمة.",
-      "vi": "Không thể tải thực đơn."
-    },
-    "app.notFound": {
-      "ko": "없는 화면이에요.",
-      "en": "This page does not exist.",
-      "ja": "このページは存在しません。",
-      "ar": "هذه الصفحة غير موجودة.",
-      "vi": "Trang này không tồn tại."
-    },
-    "app.toMenu": {
-      "ko": "메뉴로",
-      "en": "To menu",
-      "ja": "メニューへ",
-      "ar": "إلى القائمة",
-      "vi": "Về thực đơn"
-    },
-    "cartbar": {
-      "ko": "장바구니 {n}개 · {price}",
-      "en": "Cart {n} · {price}",
-      "ja": "カート {n}点 · {price}",
-      "ar": "السلة {n} · {price}",
-      "vi": "Giỏ hàng {n} · {price}"
-    },
-    "gate.lang.title": {
-      "ko": "언어를 선택해 주세요",
-      "en": "Select your language",
-      "ja": "言語を選択してください",
-      "ar": "اختر لغتك",
-      "vi": "Chọn ngôn ngữ của bạn"
-    },
-    "gate.diet.title": {
-      "ko": "돼지고기 메뉴를 제외할까요?",
-      "en": "Exclude menu items with pork?",
-      "ja": "豚肉を使ったメニューを除外しますか？",
-      "ar": "هل تريد استبعاد الأطباق التي تحتوي على لحم الخنزير؟",
-      "vi": "Bạn có muốn loại bỏ các món có thịt heo không?"
-    },
-    "gate.diet.no": {
-      "ko": "돼지고기 메뉴 제외",
-      "en": "Exclude pork items",
-      "ja": "豚肉メニューを除外",
-      "ar": "استبعاد أطباق لحم الخنزير",
-      "vi": "Loại bỏ món có thịt heo"
-    },
-    "gate.diet.any": {
-      "ko": "상관없다",
-      "en": "No preference",
-      "ja": "こだわらない",
-      "ar": "لا يهم",
-      "vi": "Không quan trọng"
-    },
-    "gate.diet.hint": {
-      "ko": "재료 설명을 기준으로 돼지고기가 들어간 피자·토핑을 숨겨요.",
-      "en": "Pizzas and toppings whose ingredients include pork will be hidden.",
-      "ja": "材料に豚肉が含まれるピザ・トッピングを非表示にします。",
-      "ar": "سيتم إخفاء البيتزا والإضافات التي تحتوي مكوناتها على لحم الخنزير.",
-      "vi": "Các loại pizza và topping có thành phần thịt heo sẽ được ẩn đi."
-    },
-    "diet.on": {
-      "ko": "돼지고기 메뉴 제외 중",
-      "en": "Pork items excluded",
-      "ja": "豚肉メニューを除外中",
-      "ar": "أطباق لحم الخنزير مستبعدة",
-      "vi": "Đang ẩn món có thịt heo"
-    },
-    "diet.off": {
-      "ko": "전체 메뉴 보는 중",
-      "en": "Showing all items",
-      "ja": "全メニューを表示中",
-      "ar": "عرض جميع الأطباق",
-      "vi": "Đang hiển thị tất cả món"
-    },
-    "diet.change": {
-      "ko": "바꾸기",
-      "en": "Change",
-      "ja": "変更",
-      "ar": "تغيير",
-      "vi": "Thay đổi"
-    },
-    "menu.soldout": {
-      "ko": "품절",
-      "en": "Sold out",
-      "ja": "売り切れ",
-      "ar": "نفد",
-      "vi": "Hết hàng"
-    },
-    "menu.pricing": {
-      "ko": "가격 확인 중",
-      "en": "Price TBC",
-      "ja": "価格確認中",
-      "ar": "السعر قيد التأكيد",
-      "vi": "Giá đang xác nhận"
-    },
-    "menu.toastSold": {
-      "ko": "품절된 메뉴예요",
-      "en": "This item is sold out",
-      "ja": "売り切れのメニューです",
-      "ar": "هذا الصنف نفد",
-      "vi": "Món này đã hết"
-    },
-    "menu.toastPricing": {
-      "ko": "가격 확인 중인 메뉴예요",
-      "en": "Price for this item is being confirmed",
-      "ja": "価格確認中のメニューです",
-      "ar": "سعر هذا الصنف قيد التأكيد",
-      "vi": "Giá món này đang được xác nhận"
-    },
-    "menu.ingredients": {
-      "ko": "재료 {list}",
-      "en": "Ingredients: {list}",
-      "ja": "材料: {list}",
-      "ar": "المكونات: {list}",
-      "vi": "Thành phần: {list}"
-    },
-    "back.menu": {
-      "ko": "← 메뉴",
-      "en": "← Menu",
-      "ja": "← メニュー",
-      "ar": "القائمة →",
-      "vi": "← Thực đơn"
-    },
-    "size": {
-      "ko": "크기",
-      "en": "Size",
-      "ja": "サイズ",
-      "ar": "الحجم",
-      "vi": "Kích cỡ"
-    },
-    "qty": {
-      "ko": "수량",
-      "en": "Quantity",
-      "ja": "数量",
-      "ar": "الكمية",
-      "vi": "Số lượng"
-    },
-    "basic": {
-      "ko": "기본",
-      "en": "Regular",
-      "ja": "標準",
-      "ar": "عادي",
-      "vi": "Tiêu chuẩn"
-    },
-    "size.M": {
-      "ko": "미디엄(M)",
-      "en": "Medium (M)",
-      "ja": "ミディアム(M)",
-      "ar": "وسط (M)",
-      "vi": "Vừa (M)"
-    },
-    "size.L": {
-      "ko": "라지(L)",
-      "en": "Large (L)",
-      "ja": "ラージ(L)",
-      "ar": "كبير (L)",
-      "vi": "Lớn (L)"
-    },
-    "add.btn": {
-      "ko": "장바구니 담기 · {price}",
-      "en": "Add to cart · {price}",
-      "ja": "カートに入れる · {price}",
-      "ar": "أضف إلى السلة · {price}",
-      "vi": "Thêm vào giỏ · {price}"
-    },
-    "add.cant": {
-      "ko": "담을 수 없어요",
-      "en": "Cannot add",
-      "ja": "追加できません",
-      "ar": "لا يمكن الإضافة",
-      "vi": "Không thể thêm"
-    },
-    "add.toast": {
-      "ko": "장바구니에 담았어요",
-      "en": "Added to cart",
-      "ja": "カートに入れました",
-      "ar": "تمت الإضافة إلى السلة",
-      "vi": "Đã thêm vào giỏ hàng"
-    },
-    "item.none": {
-      "ko": "없는 메뉴예요.",
-      "en": "This item is not available.",
-      "ja": "このメニューはありません。",
-      "ar": "هذا الصنف غير متوفر.",
-      "vi": "Món này không có sẵn."
-    },
-    "item.back": {
-      "ko": "메뉴로 돌아가기",
-      "en": "Back to menu",
-      "ja": "メニューに戻る",
-      "ar": "العودة إلى القائمة",
-      "vi": "Quay lại thực đơn"
-    },
-    "hh.unavailable": {
-      "ko": "반반피자는 지금 주문할 수 없어요.",
-      "en": "Half & half pizza is not available right now.",
-      "ja": "ハーフ＆ハーフピザは現在ご注文いただけません。",
-      "ar": "بيتزا النصفين غير متاحة حاليًا.",
-      "vi": "Pizza nửa nửa hiện không thể đặt."
-    },
-    "hh.pick": {
-      "ko": "맛 선택",
-      "en": "Choose flavors",
-      "ja": "味の選択",
-      "ar": "اختيار النكهات",
-      "vi": "Chọn vị"
-    },
-    "hh.two": {
-      "ko": "2가지",
-      "en": "pick 2",
-      "ja": "2種類",
-      "ar": "اختر 2",
-      "vi": "chọn 2"
-    },
-    "hh.more": {
-      "ko": "맛을 {n}가지 더 골라 주세요",
-      "en": "Pick {n} more flavor(s)",
-      "ja": "あと{n}種類選んでください",
-      "ar": "اختر {n} نكهة أخرى",
-      "vi": "Chọn thêm {n} vị"
-    },
-    "hh.pickBtn": {
-      "ko": "맛 2가지를 골라 주세요",
-      "en": "Choose 2 flavors",
-      "ja": "2種類の味を選んでください",
-      "ar": "اختر نكهتين",
-      "vi": "Hãy chọn 2 vị"
-    },
-    "hh.noExtra": {
-      "ko": "추가금 없음",
-      "en": "No extra charge",
-      "ja": "追加料金なし",
-      "ar": "بدون رسوم إضافية",
-      "vi": "Không phụ thu"
-    },
-    "hh.label": {
-      "ko": "반반피자 ({list})",
-      "en": "Half & Half ({list})",
-      "ja": "ハーフ＆ハーフ ({list})",
-      "ar": "نصفين ({list})",
-      "vi": "Nửa nửa ({list})"
-    },
-    "opt.pick": {
-      "ko": "선택",
-      "en": "optional",
-      "ja": "選択",
-      "ar": "اختياري",
-      "vi": "tùy chọn"
-    },
-    "opt.none": {
-      "ko": "선택 안 함",
-      "en": "None",
-      "ja": "選択しない",
-      "ar": "بدون",
-      "vi": "Không chọn"
-    },
-    "opt.perPizza": {
-      "ko": "선택 · 1판 기준",
-      "en": "optional · per pizza",
-      "ja": "選択 · ピザ1枚あたり",
-      "ar": "اختياري · لكل بيتزا",
-      "vi": "tùy chọn · mỗi pizza"
-    },
-    "bd.base": {
-      "ko": "기본 가격",
-      "en": "Base price",
-      "ja": "基本価格",
-      "ar": "السعر الأساسي",
-      "vi": "Giá cơ bản"
-    },
-    "bd.extra": {
-      "ko": "{name} 추가금",
-      "en": "{name} surcharge",
-      "ja": "{name} 追加料金",
-      "ar": "رسوم إضافية لـ {name}",
-      "vi": "Phụ thu {name}"
-    },
-    "bd.options": {
-      "ko": "크러스트·토핑",
-      "en": "Crust & toppings",
-      "ja": "クラスト・トッピング",
-      "ar": "الحافة والإضافات",
-      "vi": "Viền bánh & topping"
-    },
-    "bd.qty": {
-      "ko": "수량 x{n}",
-      "en": "Quantity x{n}",
-      "ja": "数量 x{n}",
-      "ar": "الكمية x{n}",
-      "vi": "Số lượng x{n}"
-    },
-    "bd.discount": {
-      "ko": "포장 할인",
-      "en": "Takeout discount",
-      "ja": "テイクアウト割引",
-      "ar": "خصم الطلب السفري",
-      "vi": "Giảm giá mang đi"
-    },
-    "cart.title": {
-      "ko": "장바구니",
-      "en": "Cart",
-      "ja": "カート",
-      "ar": "السلة",
-      "vi": "Giỏ hàng"
-    },
-    "cart.empty": {
-      "ko": "담긴 메뉴가 없어요.",
-      "en": "Your cart is empty.",
-      "ja": "カートは空です。",
-      "ar": "السلة فارغة.",
-      "vi": "Giỏ hàng trống."
-    },
-    "cart.goMenu": {
-      "ko": "메뉴 보러 가기",
-      "en": "Browse menu",
-      "ja": "メニューを見る",
-      "ar": "تصفح القائمة",
-      "vi": "Xem thực đơn"
-    },
-    "cart.remove": {
-      "ko": "삭제",
-      "en": "Remove",
-      "ja": "削除",
-      "ar": "حذف",
-      "vi": "Xóa"
-    },
-    "cart.orderScope": {
-      "ko": "주문 전체 기준",
-      "en": "per order",
-      "ja": "注文全体",
-      "ar": "لكل الطلب",
-      "vi": "cho cả đơn"
-    },
-    "cart.info": {
-      "ko": "주문 정보",
-      "en": "Order details",
-      "ja": "注文情報",
-      "ar": "معلومات الطلب",
-      "vi": "Thông tin đơn hàng"
-    },
-    "cart.optional": {
-      "ko": "선택",
-      "en": "optional",
-      "ja": "任意",
-      "ar": "اختياري",
-      "vi": "không bắt buộc"
-    },
-    "cart.name": {
-      "ko": "받으실 분 이름",
-      "en": "Name for pickup",
-      "ja": "受け取る方のお名前",
-      "ar": "اسم المستلم",
-      "vi": "Tên người nhận"
-    },
-    "cart.note": {
-      "ko": "요청사항",
-      "en": "Special requests",
-      "ja": "ご要望",
-      "ar": "طلبات خاصة",
-      "vi": "Yêu cầu đặc biệt"
-    },
-    "cart.gross": {
-      "ko": "상품 금액",
-      "en": "Items",
-      "ja": "商品金額",
-      "ar": "قيمة الأصناف",
-      "vi": "Tiền món"
-    },
-    "cart.sauce": {
-      "ko": "소스·피클",
-      "en": "Sauces & pickles",
-      "ja": "ソース・ピクルス",
-      "ar": "الصلصات والمخللات",
-      "vi": "Sốt & dưa chuột muối"
-    },
-    "cart.total": {
-      "ko": "결제 예정 금액",
-      "en": "Total due",
-      "ja": "お支払い予定金額",
-      "ar": "المبلغ الإجمالي",
-      "vi": "Tổng thanh toán"
-    },
-    "cart.cantOrder": {
-      "ko": "주문할 수 없어요",
-      "en": "Cannot place order",
-      "ja": "注文できません",
-      "ar": "لا يمكن إتمام الطلب",
-      "vi": "Không thể đặt hàng"
-    },
-    "line.crust": {
-      "ko": "크러스트: {name} (+{price})",
-      "en": "Crust: {name} (+{price})",
-      "ja": "クラスト: {name} (+{price})",
-      "ar": "الحافة: {name} (+{price})",
-      "vi": "Viền bánh: {name} (+{price})"
-    },
-    "line.topping": {
-      "ko": "토핑: {name}{unit} x{qty} (+{price})",
-      "en": "Topping: {name}{unit} x{qty} (+{price})",
-      "ja": "トッピング: {name}{unit} x{qty} (+{price})",
-      "ar": "إضافة: {name}{unit} x{qty} (+{price})",
-      "vi": "Topping: {name}{unit} x{qty} (+{price})"
-    },
-    "problem.sold": {
-      "ko": "{name}: 품절 또는 판매 중지",
-      "en": "{name}: sold out or unavailable",
-      "ja": "{name}: 売り切れまたは販売停止",
-      "ar": "{name}: نفد أو غير متاح",
-      "vi": "{name}: hết hàng hoặc ngừng bán"
-    },
-    "problem.soldChoice": {
-      "ko": "{name}: 품절",
-      "en": "{name}: sold out",
-      "ja": "{name}: 売り切れ",
-      "ar": "{name}: نفد",
-      "vi": "{name}: hết hàng"
-    },
-    "reason.메뉴를 찾을 수 없습니다": {
-      "ko": "메뉴를 찾을 수 없습니다",
-      "en": "Item not found",
-      "ja": "メニューが見つかりません",
-      "ar": "الصنف غير موجود",
-      "vi": "Không tìm thấy món"
-    },
-    "reason.수량이 올바르지 않습니다": {
-      "ko": "수량이 올바르지 않습니다",
-      "en": "Invalid quantity",
-      "ja": "数量が正しくありません",
-      "ar": "الكمية غير صحيحة",
-      "vi": "Số lượng không hợp lệ"
-    },
-    "reason.서로 다른 맛 2가지를 골라 주세요": {
-      "ko": "서로 다른 맛 2가지를 골라 주세요",
-      "en": "Choose 2 different flavors",
-      "ja": "異なる2種類の味を選んでください",
-      "ar": "اختر نكهتين مختلفتين",
-      "vi": "Hãy chọn 2 vị khác nhau"
-    },
-    "reason.선택할 수 없는 크기입니다": {
-      "ko": "선택할 수 없는 크기입니다",
-      "en": "This size is not available",
-      "ja": "選択できないサイズです",
-      "ar": "هذا الحجم غير متاح",
-      "vi": "Kích cỡ này không có sẵn"
-    },
-    "reason.맛 추가금이 확인되지 않았습니다": {
-      "ko": "맛 추가금이 확인되지 않았습니다",
-      "en": "Flavor surcharge not confirmed",
-      "ja": "味の追加料金が未確認です",
-      "ar": "لم يتم تأكيد رسوم النكهة",
-      "vi": "Phụ thu vị chưa được xác nhận"
-    },
-    "reason.가격이 확인되지 않은 메뉴입니다": {
-      "ko": "가격이 확인되지 않은 메뉴입니다",
-      "en": "Price for this item is not confirmed",
-      "ja": "価格が未確認のメニューです",
-      "ar": "سعر هذا الصنف غير مؤكد",
-      "vi": "Giá món này chưa được xác nhận"
-    },
-    "reason.판매하지 않는 메뉴입니다": {
-      "ko": "판매하지 않는 메뉴입니다",
-      "en": "This item is not for sale",
-      "ja": "販売していないメニューです",
-      "ar": "هذا الصنف غير معروض للبيع",
-      "vi": "Món này không được bán"
-    },
-    "reason.장바구니가 비어 있습니다": {
-      "ko": "장바구니가 비어 있습니다",
-      "en": "Your cart is empty",
-      "ja": "カートが空です",
-      "ar": "السلة فارغة",
-      "vi": "Giỏ hàng trống"
-    },
-    "cart.show": {
-      "ko": "직원에게 보여주기 · {price}",
-      "en": "Show to staff · {price}",
-      "ja": "スタッフに見せる · {price}",
-      "ar": "أظهر للموظف · {price}",
-      "vi": "Cho nhân viên xem · {price}"
-    },
-    "show.title": {
-      "ko": "이 화면을 직원에게 보여주세요",
-      "en": "Please show this screen to the staff",
-      "ja": "この画面をスタッフにお見せください",
-      "ar": "يرجى إظهار هذه الشاشة للموظف",
-      "vi": "Vui lòng cho nhân viên xem màn hình này"
-    },
-    "show.sub": {
-      "ko": "주문은 직원에게 말씀해 주세요. 이 화면은 주문 확인용이며 결제되지 않아요.",
-      "en": "Tell the staff your order. This screen is only a summary; nothing is paid here.",
-      "ja": "注文はスタッフにお伝えください。この画面は確認用で、決済は行われません。",
-      "ar": "أخبر الموظف بطلبك. هذه الشاشة للتأكيد فقط ولا يتم الدفع هنا.",
-      "vi": "Hãy nói với nhân viên đơn của bạn. Màn hình này chỉ để xác nhận, không thanh toán tại đây."
-    },
-    "show.back": {
-      "ko": "← 장바구니로 돌아가기",
-      "en": "← Back to cart",
-      "ja": "← カートに戻る",
-      "ar": "العودة إلى السلة →",
-      "vi": "← Quay lại giỏ hàng"
-    },
-    "show.yourLang": {
-      "ko": "선택하신 언어로",
-      "en": "In your language",
-      "ja": "ご利用の言語で",
-      "ar": "بلغتك",
-      "vi": "Bằng ngôn ngữ của bạn"
-    },
-    "show.confirm": {
-      "ko": "주문 내용이 맞는지 확인해 주세요",
-      "en": "Please check that your order is correct",
-      "ja": "ご注文内容に間違いがないかご確認ください",
-      "ar": "يرجى التأكد من صحة طلبك",
-      "vi": "Vui lòng kiểm tra lại đơn hàng của bạn"
-    },
-    "gate.diet.notice": {
-      "ko": "돼지고기가 들어가지 않은 피자만 골라서 볼 수 있어요.",
-      "en": "You can choose to see only pizzas that contain no pork.",
-      "ja": "豚肉を使っていないピザだけを選んで表示できます。",
-      "ar": "يمكنك اختيار عرض البيتزا الخالية من لحم الخنزير فقط.",
-      "vi": "Bạn có thể chỉ xem các loại pizza không chứa thịt heo."
-    },
-    "disclaimer": {
-      "ko": "이 사이트는 투맨피자 공식 사이트가 아니며, 메뉴 선택(주문)을 돕기 위한 사이트입니다.",
-      "en": "This is not the official Twoman Pizza website. It is only a tool to help you choose your order.",
-      "ja": "このサイトはトゥーマンピザの公式サイトではなく、メニュー選び(ご注文)をお手伝いするためのサイトです。",
-      "ar": "هذا ليس الموقع الرسمي لتومان بيتزا، بل أداة تساعدك على اختيار طلبك فقط.",
-      "vi": "Đây không phải trang web chính thức của Twoman Pizza, chỉ là công cụ giúp bạn chọn món để đặt hàng."
-    }
+ "version": 1,
+ "note": "고객 화면 다국어 문구. ui: 화면 문구(키), content: 메뉴·옵션 문구(한국어 원문이 키). 없는 번역은 한국어로 표시된다.",
+ "languages": [
+  {
+   "id": "ko",
+   "label": "한국어",
+   "dir": "ltr"
   },
-  "content": {
-    "피자": {
-      "en": "Pizza",
-      "ja": "ピザ",
-      "ar": "البيتزا",
-      "vi": "Pizza"
-    },
-    "반반피자": {
-      "en": "Half & Half Pizza",
-      "ja": "ハーフ＆ハーフピザ",
-      "ar": "بيتزا نصفين",
-      "vi": "Pizza nửa nửa"
-    },
-    "사이드": {
-      "en": "Sides",
-      "ja": "サイドメニュー",
-      "ar": "الأطباق الجانبية",
-      "vi": "Món ăn kèm"
-    },
-    "음료": {
-      "en": "Drinks",
-      "ja": "ドリンク",
-      "ar": "المشروبات",
-      "vi": "Đồ uống"
-    },
-    "토핑폭탄 투맨피자": {
-      "en": "Topping Bomb Twoman Pizza",
-      "ja": "トッピングボム トゥーマンピザ",
-      "ar": "بيتزا تومان توبينغ بومب",
-      "vi": "Twoman Pizza Topping Bomb"
-    },
-    "그동안 투맨에서 제일 많이 나간 메뉴 4가지를 합쳤습니다!": {
-      "en": "Our four best-selling pizzas combined into one!",
-      "ja": "トゥーマンで一番人気の4種類を1枚にまとめました！",
-      "ar": "جمعنا أكثر أربع بيتزات مبيعًا لدينا في بيتزا واحدة!",
-      "vi": "Gộp 4 loại pizza bán chạy nhất của Twoman vào một chiếc!"
-    },
-    "모짜렐라치즈": {
-      "en": "Mozzarella cheese",
-      "ja": "モッツァレラチーズ",
-      "ar": "جبنة موزاريلا",
-      "vi": "Phô mai mozzarella"
-    },
-    "페퍼로니": {
-      "en": "Pepperoni",
-      "ja": "ペパロニ",
-      "ar": "بيبروني",
-      "vi": "Pepperoni"
-    },
-    "베이컨": {
-      "en": "Bacon",
-      "ja": "ベーコン",
-      "ar": "لحم مقدد (بيكون)",
-      "vi": "Thịt xông khói (bacon)"
-    },
-    "체다치즈": {
-      "en": "Cheddar cheese",
-      "ja": "チェダーチーズ",
-      "ar": "جبنة شيدر",
-      "vi": "Phô mai cheddar"
-    },
-    "마요네즈": {
-      "en": "Mayonnaise",
-      "ja": "マヨネーズ",
-      "ar": "مايونيز",
-      "vi": "Sốt mayonnaise"
-    },
-    "감자": {
-      "en": "Potato",
-      "ja": "ポテト",
-      "ar": "بطاطس",
-      "vi": "Khoai tây"
-    },
-    "랜치소스": {
-      "en": "Ranch sauce",
-      "ja": "ランチソース",
-      "ar": "صلصة رانش",
-      "vi": "Sốt ranch"
-    },
-    "리얼 불고기": {
-      "en": "Real bulgogi",
-      "ja": "リアルプルコギ",
-      "ar": "بولغوغي حقيقي",
-      "vi": "Bulgogi thật"
-    },
-    "버섯": {
-      "en": "Mushroom",
-      "ja": "マッシュルーム",
-      "ar": "فطر",
-      "vi": "Nấm"
-    },
-    "불고기 소스": {
-      "en": "Bulgogi sauce",
-      "ja": "プルコギソース",
-      "ar": "صلصة بولغوغي",
-      "vi": "Sốt bulgogi"
-    },
-    "투맨에서 가장 맛있는 메뉴 2가지를 조합해 보세요.": {
-      "en": "Combine two of Twoman's tastiest pizzas.",
-      "ja": "トゥーマンの人気メニュー2種類を組み合わせてみましょう。",
-      "ar": "اجمع بين نكهتين من أشهى بيتزات تومان.",
-      "vi": "Kết hợp 2 vị ngon nhất của Twoman."
-    },
-    "폭포수 치즈": {
-      "en": "Waterfall Cheese",
-      "ja": "ウォーターフォール チーズ",
-      "ar": "بيتزا الجبن الشلال",
-      "vi": "Waterfall Cheese (Phô mai thác đổ)"
-    },
-    "치즈 천국. 극락 주의": {
-      "en": "Cheese heaven. Dangerously good.",
-      "ja": "チーズの天国。とろける美味しさにご注意！",
-      "ar": "جنة الجبن. احذر من شدة لذّتها!",
-      "vi": "Thiên đường phô mai. Coi chừng nghiện!"
-    },
-    "페퍼로니 폭탄": {
-      "en": "Pepperoni Bomb",
-      "ja": "ペパロニボム",
-      "ar": "بيبروني بومب",
-      "vi": "Pepperoni Bomb"
-    },
-    "슈퍼 콤비네이션 폭탄": {
-      "en": "Super Combination Bomb",
-      "ja": "スーパーコンビネーションボム",
-      "ar": "سوبر كومبينيشن بومب",
-      "vi": "Super Combination Bomb"
-    },
-    "페퍼로니(조각당 2개)": {
-      "en": "Pepperoni (2 per slice)",
-      "ja": "ペパロニ(1切れにつき2枚)",
-      "ar": "بيبروني (قطعتان لكل شريحة)",
-      "vi": "Pepperoni (2 lát mỗi miếng)"
-    },
-    "햄": {
-      "en": "Ham",
-      "ja": "ハム",
-      "ar": "لحم هام",
-      "vi": "Giăm bông"
-    },
-    "불고기 토핑": {
-      "en": "Bulgogi topping",
-      "ja": "プルコギトッピング",
-      "ar": "إضافة بولغوغي",
-      "vi": "Topping bulgogi"
-    },
-    "올리브": {
-      "en": "Olive",
-      "ja": "オリーブ",
-      "ar": "زيتون",
-      "vi": "Ô liu"
-    },
-    "옥수수": {
-      "en": "Corn",
-      "ja": "コーン",
-      "ar": "ذرة",
-      "vi": "Bắp ngô"
-    },
-    "파프리카": {
-      "en": "Bell pepper",
-      "ja": "パプリカ",
-      "ar": "فلفل رومي",
-      "vi": "Ớt chuông"
-    },
-    "스위트 고구마 폭탄": {
-      "en": "Sweet Potato Bomb",
-      "ja": "スイートポテトボム",
-      "ar": "سويت بوتيتو بومب",
-      "vi": "Sweet Potato Bomb"
-    },
-    "달콤함 주의": {
-      "en": "Sweetness alert",
-      "ja": "甘さにご注意",
-      "ar": "احذر من شدة الحلاوة",
-      "vi": "Coi chừng vị ngọt"
-    },
-    "고구마무스": {
-      "en": "Sweet potato mousse",
-      "ja": "さつまいもムース",
-      "ar": "موس البطاطا الحلوة",
-      "vi": "Mousse khoai lang"
-    },
-    "베이컨 체다 폭탄": {
-      "en": "Bacon Cheddar Bomb",
-      "ja": "ベーコンチェダーボム",
-      "ar": "بيكون شيدر بومب",
-      "vi": "Bacon Cheddar Bomb"
-    },
-    "더블 포테이토 폭탄": {
-      "en": "Double Potato Bomb",
-      "ja": "ダブルポテトボム",
-      "ar": "دبل بوتيتو بومب",
-      "vi": "Double Potato Bomb"
-    },
-    "포테이토 폭탄 주의": {
-      "en": "Potato bomb alert",
-      "ja": "ポテトボムにご注意",
-      "ar": "احذر: قنبلة البطاطس",
-      "vi": "Coi chừng bom khoai tây"
-    },
-    "불향가득 리얼 불고기 폭탄": {
-      "en": "Smoky Real Bulgogi Bomb",
-      "ja": "香ばしいリアルプルコギボム",
-      "ar": "بولغوغي حقيقي بنكهة الشواء بومب",
-      "vi": "Real Bulgogi Bomb vị nướng đậm đà"
-    },
-    "갈릭 치킨 킹 쉬림프 폭탄": {
-      "en": "Garlic Chicken King Shrimp Bomb",
-      "ja": "ガーリックチキン キングシュリンプボム",
-      "ar": "جارليك تشيكن كينغ شريمب بومب",
-      "vi": "Garlic Chicken King Shrimp Bomb"
-    },
-    "국내산 닭고기 폭탄 주의": {
-      "en": "Domestic chicken bomb alert",
-      "ja": "国産鶏肉ボムにご注意",
-      "ar": "احذر: قنبلة الدجاج المحلي",
-      "vi": "Coi chừng bom gà nội địa"
-    },
-    "새우": {
-      "en": "Shrimp",
-      "ja": "エビ",
-      "ar": "روبيان",
-      "vi": "Tôm"
-    },
-    "다이스 닭고기": {
-      "en": "Diced chicken",
-      "ja": "角切りチキン",
-      "ar": "دجاج مقطع مكعبات",
-      "vi": "Gà thái hạt lựu"
-    },
-    "갈릭소스": {
-      "en": "Garlic sauce",
-      "ja": "ガーリックソース",
-      "ar": "صلصة الثوم",
-      "vi": "Sốt tỏi"
-    },
-    "베이컨 킹 쉬림프 포테이토": {
-      "en": "Bacon King Shrimp Potato",
-      "ja": "ベーコン キングシュリンプ ポテト",
-      "ar": "بيكون كينغ شريمب بوتيتو",
-      "vi": "Bacon King Shrimp Potato"
-    },
-    "디아불새": {
-      "en": "Diabulsae (Spicy Fire Chicken)",
-      "ja": "ディアブルセ(激辛ファイヤーチキン)",
-      "ar": "ديابولسي (دجاج حار)",
-      "vi": "Diabulsae (Gà cay lửa)"
-    },
-    "디아블로소스(매운맛)": {
-      "en": "Diablo sauce (spicy)",
-      "ja": "ディアブロソース(辛口)",
-      "ar": "صلصة ديابلو (حارة)",
-      "vi": "Sốt Diablo (vị cay)"
-    },
-    "치즈 오븐 스파게티": {
-      "en": "Cheese Oven Spaghetti",
-      "ja": "チーズオーブンスパゲッティ",
-      "ar": "سباغيتي الجبن بالفرن",
-      "vi": "Mì Ý phô mai nướng"
-    },
-    "콤비 치즈 오븐 스파게티": {
-      "en": "Combi Cheese Oven Spaghetti",
-      "ja": "コンビチーズオーブンスパゲッティ",
-      "ar": "سباغيتي كومبي بالجبن والفرن",
-      "vi": "Mì Ý Combi phô mai nướng"
-    },
-    "베이컨 크림 스파게티": {
-      "en": "Bacon Cream Spaghetti",
-      "ja": "ベーコンクリームスパゲッティ",
-      "ar": "سباغيتي كريمة بالبيكون",
-      "vi": "Mì Ý kem bacon"
-    },
-    "킹 쉬림프 크림 스파게티": {
-      "en": "King Shrimp Cream Spaghetti",
-      "ja": "キングシュリンプクリームスパゲッティ",
-      "ar": "سباغيتي كريمة بالروبيان الكبير",
-      "vi": "Mì Ý kem tôm lớn"
-    },
-    "새우링": {
-      "en": "Shrimp Rings",
-      "ja": "エビリング",
-      "ar": "حلقات الروبيان",
-      "vi": "Tôm chiên vòng"
-    },
-    "치즈볼": {
-      "en": "Cheese Balls",
-      "ja": "チーズボール",
-      "ar": "كرات الجبن",
-      "vi": "Phô mai viên"
-    },
-    "치즈스틱": {
-      "en": "Cheese Sticks",
-      "ja": "チーズスティック",
-      "ar": "أصابع الجبن",
-      "vi": "Phô mai que"
-    },
-    "감자튀김": {
-      "en": "French Fries",
-      "ja": "フライドポテト",
-      "ar": "بطاطس مقلية",
-      "vi": "Khoai tây chiên"
-    },
-    "치킨 가라아게": {
-      "en": "Chicken Karaage",
-      "ja": "チキン唐揚げ",
-      "ar": "دجاج كاراأغي",
-      "vi": "Gà karaage"
-    },
-    "치킨텐더": {
-      "en": "Chicken Tenders",
-      "ja": "チキンテンダー",
-      "ar": "قطع دجاج تندر",
-      "vi": "Gà tender"
-    },
-    "버팔로윙": {
-      "en": "Buffalo Wings",
-      "ja": "バッファローウィング",
-      "ar": "أجنحة بافالو",
-      "vi": "Cánh gà Buffalo"
-    },
-    "점보닭다리": {
-      "en": "Jumbo Drumstick",
-      "ja": "ジャンボ手羽元",
-      "ar": "ساق دجاج جامبو",
-      "vi": "Đùi gà jumbo"
-    },
-    "코카콜라": {
-      "en": "Coca-Cola",
-      "ja": "コカ・コーラ",
-      "ar": "كوكاكولا",
-      "vi": "Coca-Cola"
-    },
-    "스프라이트": {
-      "en": "Sprite",
-      "ja": "スプライト",
-      "ar": "سبرايت",
-      "vi": "Sprite"
-    },
-    "제로 코카콜라": {
-      "en": "Coca-Cola Zero",
-      "ja": "コカ・コーラ ゼロ",
-      "ar": "كوكاكولا زيرو",
-      "vi": "Coca-Cola Zero"
-    },
-    "크러스트(엣지) 변경": {
-      "en": "Change crust (edge)",
-      "ja": "クラスト(エッジ)変更",
-      "ar": "تغيير الحافة",
-      "vi": "Đổi viền bánh"
-    },
-    "치즈 크러스트": {
-      "en": "Cheese crust",
-      "ja": "チーズクラスト",
-      "ar": "حافة الجبن",
-      "vi": "Viền phô mai"
-    },
-    "체다 크러스트": {
-      "en": "Cheddar crust",
-      "ja": "チェダークラスト",
-      "ar": "حافة الشيدر",
-      "vi": "Viền cheddar"
-    },
-    "누드 크러스트": {
-      "en": "Nude crust (filling exposed)",
-      "ja": "ヌードクラスト",
-      "ar": "حافة مكشوفة (نود)",
-      "vi": "Viền nude (nhân để lộ)"
-    },
-    "고구마 크러스트": {
-      "en": "Sweet potato crust",
-      "ja": "さつまいもクラスト",
-      "ar": "حافة البطاطا الحلوة",
-      "vi": "Viền khoai lang"
-    },
-    "황금 크러스트": {
-      "en": "Golden crust",
-      "ja": "ゴールデンクラスト",
-      "ar": "الحافة الذهبية",
-      "vi": "Viền vàng"
-    },
-    "체다, 고구마무스": {
-      "en": "Cheddar, sweet potato mousse",
-      "ja": "チェダー、さつまいもムース",
-      "ar": "شيدر، موس البطاطا الحلوة",
-      "vi": "Cheddar, mousse khoai lang"
-    },
-    "더블 크러스트": {
-      "en": "Double crust",
-      "ja": "ダブルクラスト",
-      "ar": "الحافة المزدوجة",
-      "vi": "Viền đôi"
-    },
-    "치즈, 고구마무스": {
-      "en": "Cheese, sweet potato mousse",
-      "ja": "チーズ、さつまいもムース",
-      "ar": "جبن، موس البطاطا الحلوة",
-      "vi": "Phô mai, mousse khoai lang"
-    },
-    "토핑 추가": {
-      "en": "Add toppings",
-      "ja": "トッピング追加",
-      "ar": "إضافات",
-      "vi": "Thêm topping"
-    },
-    "치즈 추가": {
-      "en": "Extra cheese",
-      "ja": "チーズ追加",
-      "ar": "جبنة إضافية",
-      "vi": "Thêm phô mai"
-    },
-    "80g": {
-      "en": "80g",
-      "ja": "80g",
-      "ar": "80 غ",
-      "vi": "80g"
-    },
-    "100g": {
-      "en": "100g",
-      "ja": "100g",
-      "ar": "100 غ",
-      "vi": "100g"
-    },
-    "체다치즈 추가": {
-      "en": "Extra cheddar",
-      "ja": "チェダーチーズ追加",
-      "ar": "شيدر إضافي",
-      "vi": "Thêm cheddar"
-    },
-    "불고기 추가": {
-      "en": "Extra bulgogi",
-      "ja": "プルコギ追加",
-      "ar": "بولغوغي إضافي",
-      "vi": "Thêm bulgogi"
-    },
-    "50g": {
-      "en": "50g",
-      "ja": "50g",
-      "ar": "50 غ",
-      "vi": "50g"
-    },
-    "페퍼로니 추가": {
-      "en": "Extra pepperoni",
-      "ja": "ペパロニ追加",
-      "ar": "بيبروني إضافي",
-      "vi": "Thêm pepperoni"
-    },
-    "베이컨 추가": {
-      "en": "Extra bacon",
-      "ja": "ベーコン追加",
-      "ar": "بيكون إضافي",
-      "vi": "Thêm bacon"
-    },
-    "옥수수 추가": {
-      "en": "Extra corn",
-      "ja": "コーン追加",
-      "ar": "ذرة إضافية",
-      "vi": "Thêm bắp ngô"
-    },
-    "올리브 추가": {
-      "en": "Extra olives",
-      "ja": "オリーブ追加",
-      "ar": "زيتون إضافي",
-      "vi": "Thêm ô liu"
-    },
-    "야채 추가 (양파, 파프리카, 새송이)": {
-      "en": "Extra vegetables (onion, bell pepper, king oyster mushroom)",
-      "ja": "野菜追加(玉ねぎ、パプリカ、エリンギ)",
-      "ar": "خضار إضافية (بصل، فلفل رومي، فطر)",
-      "vi": "Thêm rau (hành tây, ớt chuông, nấm đùi gà)"
-    },
-    "새우 추가": {
-      "en": "Extra shrimp",
-      "ja": "エビ追加",
-      "ar": "روبيان إضافي",
-      "vi": "Thêm tôm"
-    },
-    "2마리": {
-      "en": "2 pcs",
-      "ja": "2尾",
-      "ar": "قطعتان",
-      "vi": "2 con"
-    },
-    "4마리": {
-      "en": "4 pcs",
-      "ja": "4尾",
-      "ar": "4 قطع",
-      "vi": "4 con"
-    },
-    "8마리": {
-      "en": "8 pcs",
-      "ja": "8尾",
-      "ar": "8 قطع",
-      "vi": "8 con"
-    },
-    "소스·피클 추가": {
-      "en": "Extra sauces & pickles",
-      "ja": "ソース・ピクルス追加",
-      "ar": "صلصات ومخللات إضافية",
-      "vi": "Thêm sốt & dưa chuột muối"
-    },
-    "핫소스": {
-      "en": "Hot sauce",
-      "ja": "ホットソース",
-      "ar": "صلصة حارة",
-      "vi": "Sốt cay"
-    },
-    "갈릭디핑소스": {
-      "en": "Garlic dipping sauce",
-      "ja": "ガーリックディップソース",
-      "ar": "صلصة غمس الثوم",
-      "vi": "Sốt tỏi chấm"
-    },
-    "피클": {
-      "en": "Pickles",
-      "ja": "ピクルス",
-      "ar": "مخلل",
-      "vi": "Dưa chuột muối"
-    },
-    "파마산치즈": {
-      "en": "Parmesan cheese",
-      "ja": "パルメザンチーズ",
-      "ar": "جبنة بارميزان",
-      "vi": "Phô mai parmesan"
-    },
-    "할라피뇨피클": {
-      "en": "Jalapeño pickles",
-      "ja": "ハラペーニョピクルス",
-      "ar": "مخلل هالبينو",
-      "vi": "Ớt jalapeño muối"
-    },
-    "옛날 떡볶이": {
-      "en": "Old-Fashioned Tteokbokki (Spicy Rice Cakes)",
-      "ja": "昔ながらのトッポギ",
-      "ar": "توكبوكي بالطريقة التقليدية (كعك الأرز الحار)",
-      "vi": "Tteokbokki kiểu truyền thống (bánh gạo cay)"
-    }
+  {
+   "id": "en",
+   "label": "English",
+   "dir": "ltr"
+  },
+  {
+   "id": "ja",
+   "label": "日本語",
+   "dir": "ltr"
+  },
+  {
+   "id": "ar",
+   "label": "العربية",
+   "dir": "rtl"
+  },
+  {
+   "id": "vi",
+   "label": "Tiếng Việt",
+   "dir": "ltr"
   }
+ ],
+ "ui": {
+  "app.title": {
+   "ko": "투맨피자 포장 주문",
+   "en": "Twoman Pizza Takeout",
+   "ja": "トゥーマンピザ テイクアウト注文",
+   "ar": "طلب سفري - تومان بيتزا",
+   "vi": "Đặt món mang đi - Twoman Pizza"
+  },
+  "app.banner": {
+   "ko": "포장 전용 · 주문 1회 할인: 라지 피자가 있으면 {l}, 미디엄만 있으면 {m}",
+   "en": "Takeout only · One discount per order: {l} off if it includes a Large pizza, {m} off if Medium only",
+   "ja": "テイクアウト専用・ご注文1回につき割引: ラージピザを含む場合 {l}、ミディアムのみの場合 {m}",
+   "ar": "للطلب السفري فقط · خصم واحد لكل طلب: {l} إذا تضمّن بيتزا كبيرة، و{m} إذا كانت وسط فقط",
+   "vi": "Chỉ mang đi · Giảm giá 1 lần cho mỗi đơn: {l} nếu có pizza cỡ lớn, {m} nếu chỉ có cỡ vừa"
+  },
+  "app.loading": {
+   "ko": "메뉴를 불러오는 중…",
+   "en": "Loading menu…",
+   "ja": "メニューを読み込み中…",
+   "ar": "جارٍ تحميل القائمة…",
+   "vi": "Đang tải thực đơn…"
+  },
+  "app.loadError": {
+   "ko": "메뉴를 불러오지 못했어요.",
+   "en": "Could not load the menu.",
+   "ja": "メニューを読み込めませんでした。",
+   "ar": "تعذّر تحميل القائمة.",
+   "vi": "Không thể tải thực đơn."
+  },
+  "app.notFound": {
+   "ko": "없는 화면이에요.",
+   "en": "This page does not exist.",
+   "ja": "このページは存在しません。",
+   "ar": "هذه الصفحة غير موجودة.",
+   "vi": "Trang này không tồn tại."
+  },
+  "app.toMenu": {
+   "ko": "메뉴로",
+   "en": "To menu",
+   "ja": "メニューへ",
+   "ar": "إلى القائمة",
+   "vi": "Về thực đơn"
+  },
+  "cartbar": {
+   "ko": "장바구니 {n}개 · {price}",
+   "en": "Cart {n} · {price}",
+   "ja": "カート {n}点 · {price}",
+   "ar": "السلة {n} · {price}",
+   "vi": "Giỏ hàng {n} · {price}"
+  },
+  "gate.lang.title": {
+   "ko": "언어를 선택해 주세요",
+   "en": "Select your language",
+   "ja": "言語を選択してください",
+   "ar": "اختر لغتك",
+   "vi": "Chọn ngôn ngữ của bạn"
+  },
+  "gate.diet.title": {
+   "ko": "돼지고기 메뉴를 제외할까요?",
+   "en": "Exclude menu items with pork?",
+   "ja": "豚肉を使ったメニューを除外しますか？",
+   "ar": "هل تريد استبعاد الأطباق التي تحتوي على لحم الخنزير؟",
+   "vi": "Bạn có muốn loại bỏ các món có thịt heo không?"
+  },
+  "gate.diet.no": {
+   "ko": "돼지고기 메뉴 제외",
+   "en": "Exclude pork items",
+   "ja": "豚肉メニューを除外",
+   "ar": "استبعاد أطباق لحم الخنزير",
+   "vi": "Loại bỏ món có thịt heo"
+  },
+  "gate.diet.any": {
+   "ko": "상관없다",
+   "en": "No preference",
+   "ja": "こだわらない",
+   "ar": "لا يهم",
+   "vi": "Không quan trọng"
+  },
+  "gate.diet.hint": {
+   "ko": "재료 설명을 기준으로 돼지고기가 들어간 피자·토핑을 숨겨요.",
+   "en": "Pizzas and toppings whose ingredients include pork will be hidden.",
+   "ja": "材料に豚肉が含まれるピザ・トッピングを非表示にします。",
+   "ar": "سيتم إخفاء البيتزا والإضافات التي تحتوي مكوناتها على لحم الخنزير.",
+   "vi": "Các loại pizza và topping có thành phần thịt heo sẽ được ẩn đi."
+  },
+  "diet.on": {
+   "ko": "돼지고기 메뉴 제외 중",
+   "en": "Pork items excluded",
+   "ja": "豚肉メニューを除外中",
+   "ar": "أطباق لحم الخنزير مستبعدة",
+   "vi": "Đang ẩn món có thịt heo"
+  },
+  "diet.off": {
+   "ko": "전체 메뉴 보는 중",
+   "en": "Showing all items",
+   "ja": "全メニューを表示中",
+   "ar": "عرض جميع الأطباق",
+   "vi": "Đang hiển thị tất cả món"
+  },
+  "diet.change": {
+   "ko": "바꾸기",
+   "en": "Change",
+   "ja": "変更",
+   "ar": "تغيير",
+   "vi": "Thay đổi"
+  },
+  "menu.soldout": {
+   "ko": "품절",
+   "en": "Sold out",
+   "ja": "売り切れ",
+   "ar": "نفد",
+   "vi": "Hết hàng"
+  },
+  "menu.pricing": {
+   "ko": "가격 확인 중",
+   "en": "Price TBC",
+   "ja": "価格確認中",
+   "ar": "السعر قيد التأكيد",
+   "vi": "Giá đang xác nhận"
+  },
+  "menu.toastSold": {
+   "ko": "품절된 메뉴예요",
+   "en": "This item is sold out",
+   "ja": "売り切れのメニューです",
+   "ar": "هذا الصنف نفد",
+   "vi": "Món này đã hết"
+  },
+  "menu.toastPricing": {
+   "ko": "가격 확인 중인 메뉴예요",
+   "en": "Price for this item is being confirmed",
+   "ja": "価格確認中のメニューです",
+   "ar": "سعر هذا الصنف قيد التأكيد",
+   "vi": "Giá món này đang được xác nhận"
+  },
+  "menu.ingredients": {
+   "ko": "재료 {list}",
+   "en": "Ingredients: {list}",
+   "ja": "材料: {list}",
+   "ar": "المكونات: {list}",
+   "vi": "Thành phần: {list}"
+  },
+  "back.menu": {
+   "ko": "← 메뉴",
+   "en": "← Menu",
+   "ja": "← メニュー",
+   "ar": "القائمة →",
+   "vi": "← Thực đơn"
+  },
+  "size": {
+   "ko": "크기",
+   "en": "Size",
+   "ja": "サイズ",
+   "ar": "الحجم",
+   "vi": "Kích cỡ"
+  },
+  "qty": {
+   "ko": "수량",
+   "en": "Quantity",
+   "ja": "数量",
+   "ar": "الكمية",
+   "vi": "Số lượng"
+  },
+  "basic": {
+   "ko": "기본",
+   "en": "Regular",
+   "ja": "標準",
+   "ar": "عادي",
+   "vi": "Tiêu chuẩn"
+  },
+  "size.M": {
+   "ko": "미디엄(M)",
+   "en": "Medium (M)",
+   "ja": "ミディアム(M)",
+   "ar": "وسط (M)",
+   "vi": "Vừa (M)"
+  },
+  "size.L": {
+   "ko": "라지(L)",
+   "en": "Large (L)",
+   "ja": "ラージ(L)",
+   "ar": "كبير (L)",
+   "vi": "Lớn (L)"
+  },
+  "add.btn": {
+   "ko": "장바구니 담기 · {price}",
+   "en": "Add to cart · {price}",
+   "ja": "カートに入れる · {price}",
+   "ar": "أضف إلى السلة · {price}",
+   "vi": "Thêm vào giỏ · {price}"
+  },
+  "add.cant": {
+   "ko": "담을 수 없어요",
+   "en": "Cannot add",
+   "ja": "追加できません",
+   "ar": "لا يمكن الإضافة",
+   "vi": "Không thể thêm"
+  },
+  "add.toast": {
+   "ko": "장바구니에 담았어요",
+   "en": "Added to cart",
+   "ja": "カートに入れました",
+   "ar": "تمت الإضافة إلى السلة",
+   "vi": "Đã thêm vào giỏ hàng"
+  },
+  "item.none": {
+   "ko": "없는 메뉴예요.",
+   "en": "This item is not available.",
+   "ja": "このメニューはありません。",
+   "ar": "هذا الصنف غير متوفر.",
+   "vi": "Món này không có sẵn."
+  },
+  "item.back": {
+   "ko": "메뉴로 돌아가기",
+   "en": "Back to menu",
+   "ja": "メニューに戻る",
+   "ar": "العودة إلى القائمة",
+   "vi": "Quay lại thực đơn"
+  },
+  "hh.unavailable": {
+   "ko": "반반피자는 지금 주문할 수 없어요.",
+   "en": "Half & half pizza is not available right now.",
+   "ja": "ハーフ＆ハーフピザは現在ご注文いただけません。",
+   "ar": "بيتزا النصفين غير متاحة حاليًا.",
+   "vi": "Pizza nửa nửa hiện không thể đặt."
+  },
+  "hh.pick": {
+   "ko": "맛 선택",
+   "en": "Choose flavors",
+   "ja": "味の選択",
+   "ar": "اختيار النكهات",
+   "vi": "Chọn vị"
+  },
+  "hh.two": {
+   "ko": "2가지",
+   "en": "pick 2",
+   "ja": "2種類",
+   "ar": "اختر 2",
+   "vi": "chọn 2"
+  },
+  "hh.more": {
+   "ko": "맛을 {n}가지 더 골라 주세요",
+   "en": "Pick {n} more flavor(s)",
+   "ja": "あと{n}種類選んでください",
+   "ar": "اختر {n} نكهة أخرى",
+   "vi": "Chọn thêm {n} vị"
+  },
+  "hh.pickBtn": {
+   "ko": "맛 2가지를 골라 주세요",
+   "en": "Choose 2 flavors",
+   "ja": "2種類の味を選んでください",
+   "ar": "اختر نكهتين",
+   "vi": "Hãy chọn 2 vị"
+  },
+  "hh.noExtra": {
+   "ko": "추가금 없음",
+   "en": "No extra charge",
+   "ja": "追加料金なし",
+   "ar": "بدون رسوم إضافية",
+   "vi": "Không phụ thu"
+  },
+  "hh.label": {
+   "ko": "반반피자 ({list})",
+   "en": "Half & Half ({list})",
+   "ja": "ハーフ＆ハーフ ({list})",
+   "ar": "نصفين ({list})",
+   "vi": "Nửa nửa ({list})"
+  },
+  "opt.pick": {
+   "ko": "선택",
+   "en": "optional",
+   "ja": "選択",
+   "ar": "اختياري",
+   "vi": "tùy chọn"
+  },
+  "opt.none": {
+   "ko": "선택 안 함",
+   "en": "None",
+   "ja": "選択しない",
+   "ar": "بدون",
+   "vi": "Không chọn"
+  },
+  "opt.perPizza": {
+   "ko": "선택 · 1판 기준",
+   "en": "optional · per pizza",
+   "ja": "選択 · ピザ1枚あたり",
+   "ar": "اختياري · لكل بيتزا",
+   "vi": "tùy chọn · mỗi pizza"
+  },
+  "bd.base": {
+   "ko": "기본 가격",
+   "en": "Base price",
+   "ja": "基本価格",
+   "ar": "السعر الأساسي",
+   "vi": "Giá cơ bản"
+  },
+  "bd.extra": {
+   "ko": "{name} 추가금",
+   "en": "{name} surcharge",
+   "ja": "{name} 追加料金",
+   "ar": "رسوم إضافية لـ {name}",
+   "vi": "Phụ thu {name}"
+  },
+  "bd.options": {
+   "ko": "크러스트·토핑",
+   "en": "Crust & toppings",
+   "ja": "クラスト・トッピング",
+   "ar": "الحافة والإضافات",
+   "vi": "Viền bánh & topping"
+  },
+  "bd.qty": {
+   "ko": "수량 x{n}",
+   "en": "Quantity x{n}",
+   "ja": "数量 x{n}",
+   "ar": "الكمية x{n}",
+   "vi": "Số lượng x{n}"
+  },
+  "bd.discount": {
+   "ko": "포장 할인",
+   "en": "Takeout discount",
+   "ja": "テイクアウト割引",
+   "ar": "خصم الطلب السفري",
+   "vi": "Giảm giá mang đi"
+  },
+  "cart.title": {
+   "ko": "장바구니",
+   "en": "Cart",
+   "ja": "カート",
+   "ar": "السلة",
+   "vi": "Giỏ hàng"
+  },
+  "cart.empty": {
+   "ko": "담긴 메뉴가 없어요.",
+   "en": "Your cart is empty.",
+   "ja": "カートは空です。",
+   "ar": "السلة فارغة.",
+   "vi": "Giỏ hàng trống."
+  },
+  "cart.goMenu": {
+   "ko": "메뉴 보러 가기",
+   "en": "Browse menu",
+   "ja": "メニューを見る",
+   "ar": "تصفح القائمة",
+   "vi": "Xem thực đơn"
+  },
+  "cart.remove": {
+   "ko": "삭제",
+   "en": "Remove",
+   "ja": "削除",
+   "ar": "حذف",
+   "vi": "Xóa"
+  },
+  "cart.orderScope": {
+   "ko": "주문 전체 기준",
+   "en": "per order",
+   "ja": "注文全体",
+   "ar": "لكل الطلب",
+   "vi": "cho cả đơn"
+  },
+  "cart.info": {
+   "ko": "주문 정보",
+   "en": "Order details",
+   "ja": "注文情報",
+   "ar": "معلومات الطلب",
+   "vi": "Thông tin đơn hàng"
+  },
+  "cart.optional": {
+   "ko": "선택",
+   "en": "optional",
+   "ja": "任意",
+   "ar": "اختياري",
+   "vi": "không bắt buộc"
+  },
+  "cart.name": {
+   "ko": "받으실 분 이름",
+   "en": "Name for pickup",
+   "ja": "受け取る方のお名前",
+   "ar": "اسم المستلم",
+   "vi": "Tên người nhận"
+  },
+  "cart.note": {
+   "ko": "요청사항",
+   "en": "Special requests",
+   "ja": "ご要望",
+   "ar": "طلبات خاصة",
+   "vi": "Yêu cầu đặc biệt"
+  },
+  "cart.gross": {
+   "ko": "상품 금액",
+   "en": "Items",
+   "ja": "商品金額",
+   "ar": "قيمة الأصناف",
+   "vi": "Tiền món"
+  },
+  "cart.sauce": {
+   "ko": "소스·피클",
+   "en": "Sauces & pickles",
+   "ja": "ソース・ピクルス",
+   "ar": "الصلصات والمخللات",
+   "vi": "Sốt & dưa chuột muối"
+  },
+  "cart.total": {
+   "ko": "결제 예정 금액",
+   "en": "Total due",
+   "ja": "お支払い予定金額",
+   "ar": "المبلغ الإجمالي",
+   "vi": "Tổng thanh toán"
+  },
+  "cart.cantOrder": {
+   "ko": "주문할 수 없어요",
+   "en": "Cannot place order",
+   "ja": "注文できません",
+   "ar": "لا يمكن إتمام الطلب",
+   "vi": "Không thể đặt hàng"
+  },
+  "line.crust": {
+   "ko": "크러스트: {name} (+{price})",
+   "en": "Crust: {name} (+{price})",
+   "ja": "クラスト: {name} (+{price})",
+   "ar": "الحافة: {name} (+{price})",
+   "vi": "Viền bánh: {name} (+{price})"
+  },
+  "line.topping": {
+   "ko": "토핑: {name}{unit} x{qty} (+{price})",
+   "en": "Topping: {name}{unit} x{qty} (+{price})",
+   "ja": "トッピング: {name}{unit} x{qty} (+{price})",
+   "ar": "إضافة: {name}{unit} x{qty} (+{price})",
+   "vi": "Topping: {name}{unit} x{qty} (+{price})"
+  },
+  "problem.sold": {
+   "ko": "{name}: 품절 또는 판매 중지",
+   "en": "{name}: sold out or unavailable",
+   "ja": "{name}: 売り切れまたは販売停止",
+   "ar": "{name}: نفد أو غير متاح",
+   "vi": "{name}: hết hàng hoặc ngừng bán"
+  },
+  "problem.soldChoice": {
+   "ko": "{name}: 품절",
+   "en": "{name}: sold out",
+   "ja": "{name}: 売り切れ",
+   "ar": "{name}: نفد",
+   "vi": "{name}: hết hàng"
+  },
+  "reason.메뉴를 찾을 수 없습니다": {
+   "ko": "메뉴를 찾을 수 없습니다",
+   "en": "Item not found",
+   "ja": "メニューが見つかりません",
+   "ar": "الصنف غير موجود",
+   "vi": "Không tìm thấy món"
+  },
+  "reason.수량이 올바르지 않습니다": {
+   "ko": "수량이 올바르지 않습니다",
+   "en": "Invalid quantity",
+   "ja": "数量が正しくありません",
+   "ar": "الكمية غير صحيحة",
+   "vi": "Số lượng không hợp lệ"
+  },
+  "reason.서로 다른 맛 2가지를 골라 주세요": {
+   "ko": "서로 다른 맛 2가지를 골라 주세요",
+   "en": "Choose 2 different flavors",
+   "ja": "異なる2種類の味を選んでください",
+   "ar": "اختر نكهتين مختلفتين",
+   "vi": "Hãy chọn 2 vị khác nhau"
+  },
+  "reason.선택할 수 없는 크기입니다": {
+   "ko": "선택할 수 없는 크기입니다",
+   "en": "This size is not available",
+   "ja": "選択できないサイズです",
+   "ar": "هذا الحجم غير متاح",
+   "vi": "Kích cỡ này không có sẵn"
+  },
+  "reason.맛 추가금이 확인되지 않았습니다": {
+   "ko": "맛 추가금이 확인되지 않았습니다",
+   "en": "Flavor surcharge not confirmed",
+   "ja": "味の追加料金が未確認です",
+   "ar": "لم يتم تأكيد رسوم النكهة",
+   "vi": "Phụ thu vị chưa được xác nhận"
+  },
+  "reason.가격이 확인되지 않은 메뉴입니다": {
+   "ko": "가격이 확인되지 않은 메뉴입니다",
+   "en": "Price for this item is not confirmed",
+   "ja": "価格が未確認のメニューです",
+   "ar": "سعر هذا الصنف غير مؤكد",
+   "vi": "Giá món này chưa được xác nhận"
+  },
+  "reason.판매하지 않는 메뉴입니다": {
+   "ko": "판매하지 않는 메뉴입니다",
+   "en": "This item is not for sale",
+   "ja": "販売していないメニューです",
+   "ar": "هذا الصنف غير معروض للبيع",
+   "vi": "Món này không được bán"
+  },
+  "reason.장바구니가 비어 있습니다": {
+   "ko": "장바구니가 비어 있습니다",
+   "en": "Your cart is empty",
+   "ja": "カートが空です",
+   "ar": "السلة فارغة",
+   "vi": "Giỏ hàng trống"
+  },
+  "cart.show": {
+   "ko": "직원에게 보여주기 · {price}",
+   "en": "Show to staff · {price}",
+   "ja": "スタッフに見せる · {price}",
+   "ar": "أظهر للموظف · {price}",
+   "vi": "Cho nhân viên xem · {price}"
+  },
+  "show.title": {
+   "ko": "이 화면을 직원에게 보여주세요",
+   "en": "Please show this screen to the staff",
+   "ja": "この画面をスタッフにお見せください",
+   "ar": "يرجى إظهار هذه الشاشة للموظف",
+   "vi": "Vui lòng cho nhân viên xem màn hình này"
+  },
+  "show.sub": {
+   "ko": "주문은 직원에게 말씀해 주세요. 이 화면은 주문 확인용이며 결제되지 않아요.",
+   "en": "Tell the staff your order. This screen is only a summary; nothing is paid here.",
+   "ja": "注文はスタッフにお伝えください。この画面は確認用で、決済は行われません。",
+   "ar": "أخبر الموظف بطلبك. هذه الشاشة للتأكيد فقط ولا يتم الدفع هنا.",
+   "vi": "Hãy nói với nhân viên đơn của bạn. Màn hình này chỉ để xác nhận, không thanh toán tại đây."
+  },
+  "show.back": {
+   "ko": "← 장바구니로 돌아가기",
+   "en": "← Back to cart",
+   "ja": "← カートに戻る",
+   "ar": "العودة إلى السلة →",
+   "vi": "← Quay lại giỏ hàng"
+  },
+  "show.yourLang": {
+   "ko": "선택하신 언어로",
+   "en": "In your language",
+   "ja": "ご利用の言語で",
+   "ar": "بلغتك",
+   "vi": "Bằng ngôn ngữ của bạn"
+  },
+  "show.confirm": {
+   "ko": "주문 내용이 맞는지 확인해 주세요",
+   "en": "Please check that your order is correct",
+   "ja": "ご注文内容に間違いがないかご確認ください",
+   "ar": "يرجى التأكد من صحة طلبك",
+   "vi": "Vui lòng kiểm tra lại đơn hàng của bạn"
+  },
+  "gate.diet.notice": {
+   "ko": "돼지고기가 들어가지 않은 피자만 골라서 볼 수 있어요.",
+   "en": "You can choose to see only pizzas that contain no pork.",
+   "ja": "豚肉を使っていないピザだけを選んで表示できます。",
+   "ar": "يمكنك اختيار عرض البيتزا الخالية من لحم الخنزير فقط.",
+   "vi": "Bạn có thể chỉ xem các loại pizza không chứa thịt heo."
+  },
+  "disclaimer": {
+   "ko": "이 사이트는 투맨피자 공식 사이트가 아니며, 메뉴 선택(주문)을 돕기 위한 사이트입니다.",
+   "en": "This is not the official Twoman Pizza website. It is only a tool to help you choose your order.",
+   "ja": "このサイトはトゥーマンピザの公式サイトではなく、メニュー選び(ご注文)をお手伝いするためのサイトです。",
+   "ar": "هذا ليس الموقع الرسمي لتومان بيتزا، بل أداة تساعدك على اختيار طلبك فقط.",
+   "vi": "Đây không phải trang web chính thức của Twoman Pizza, chỉ là công cụ giúp bạn chọn món để đặt hàng."
+  }
+ },
+ "content": {
+  "피자": {
+   "en": "Pizza",
+   "ja": "ピザ",
+   "ar": "البيتزا",
+   "vi": "Pizza"
+  },
+  "반반피자": {
+   "en": "Half & Half Pizza",
+   "ja": "ハーフ＆ハーフピザ",
+   "ar": "بيتزا نصفين",
+   "vi": "Pizza nửa nửa"
+  },
+  "사이드": {
+   "en": "Sides",
+   "ja": "サイドメニュー",
+   "ar": "الأطباق الجانبية",
+   "vi": "Món ăn kèm"
+  },
+  "음료": {
+   "en": "Drinks",
+   "ja": "ドリンク",
+   "ar": "المشروبات",
+   "vi": "Đồ uống"
+  },
+  "토핑폭탄 투맨피자": {
+   "en": "Topping Bomb Twoman Pizza",
+   "ja": "トッピングボム トゥーマンピザ",
+   "ar": "بيتزا تومان توبينغ بومب",
+   "vi": "Twoman Pizza Topping Bomb"
+  },
+  "그동안 투맨에서 제일 많이 나간 메뉴 4가지를 합쳤습니다!": {
+   "en": "Our four best-selling pizzas combined into one!",
+   "ja": "トゥーマンで一番人気の4種類を1枚にまとめました！",
+   "ar": "جمعنا أكثر أربع بيتزات مبيعًا لدينا في بيتزا واحدة!",
+   "vi": "Gộp 4 loại pizza bán chạy nhất của Twoman vào một chiếc!"
+  },
+  "모짜렐라치즈": {
+   "en": "Mozzarella cheese",
+   "ja": "モッツァレラチーズ",
+   "ar": "جبنة موزاريلا",
+   "vi": "Phô mai mozzarella"
+  },
+  "페퍼로니": {
+   "en": "Pepperoni",
+   "ja": "ペパロニ",
+   "ar": "بيبروني",
+   "vi": "Pepperoni"
+  },
+  "베이컨": {
+   "en": "Bacon",
+   "ja": "ベーコン",
+   "ar": "لحم مقدد (بيكون)",
+   "vi": "Thịt xông khói (bacon)"
+  },
+  "체다치즈": {
+   "en": "Cheddar cheese",
+   "ja": "チェダーチーズ",
+   "ar": "جبنة شيدر",
+   "vi": "Phô mai cheddar"
+  },
+  "마요네즈": {
+   "en": "Mayonnaise",
+   "ja": "マヨネーズ",
+   "ar": "مايونيز",
+   "vi": "Sốt mayonnaise"
+  },
+  "감자": {
+   "en": "Potato",
+   "ja": "ポテト",
+   "ar": "بطاطس",
+   "vi": "Khoai tây"
+  },
+  "랜치소스": {
+   "en": "Ranch sauce",
+   "ja": "ランチソース",
+   "ar": "صلصة رانش",
+   "vi": "Sốt ranch"
+  },
+  "리얼 불고기": {
+   "en": "Real bulgogi",
+   "ja": "リアルプルコギ",
+   "ar": "بولغوغي حقيقي",
+   "vi": "Bulgogi thật"
+  },
+  "버섯": {
+   "en": "Mushroom",
+   "ja": "マッシュルーム",
+   "ar": "فطر",
+   "vi": "Nấm"
+  },
+  "불고기 소스": {
+   "en": "Bulgogi sauce",
+   "ja": "プルコギソース",
+   "ar": "صلصة بولغوغي",
+   "vi": "Sốt bulgogi"
+  },
+  "투맨에서 가장 맛있는 메뉴 2가지를 조합해 보세요.": {
+   "en": "Combine two of Twoman's tastiest pizzas.",
+   "ja": "トゥーマンの人気メニュー2種類を組み合わせてみましょう。",
+   "ar": "اجمع بين نكهتين من أشهى بيتزات تومان.",
+   "vi": "Kết hợp 2 vị ngon nhất của Twoman."
+  },
+  "폭포수 치즈": {
+   "en": "Waterfall Cheese",
+   "ja": "ウォーターフォール チーズ",
+   "ar": "بيتزا الجبن الشلال",
+   "vi": "Waterfall Cheese (Phô mai thác đổ)"
+  },
+  "치즈 천국. 극락 주의": {
+   "en": "Cheese heaven. Dangerously good.",
+   "ja": "チーズの天国。とろける美味しさにご注意！",
+   "ar": "جنة الجبن. احذر من شدة لذّتها!",
+   "vi": "Thiên đường phô mai. Coi chừng nghiện!"
+  },
+  "페퍼로니 폭탄": {
+   "en": "Pepperoni Bomb",
+   "ja": "ペパロニボム",
+   "ar": "بيبروني بومب",
+   "vi": "Pepperoni Bomb"
+  },
+  "슈퍼 콤비네이션 폭탄": {
+   "en": "Super Combination Bomb",
+   "ja": "スーパーコンビネーションボム",
+   "ar": "سوبر كومبينيشن بومب",
+   "vi": "Super Combination Bomb"
+  },
+  "페퍼로니(조각당 2개)": {
+   "en": "Pepperoni (2 per slice)",
+   "ja": "ペパロニ(1切れにつき2枚)",
+   "ar": "بيبروني (قطعتان لكل شريحة)",
+   "vi": "Pepperoni (2 lát mỗi miếng)"
+  },
+  "햄": {
+   "en": "Ham",
+   "ja": "ハム",
+   "ar": "لحم هام",
+   "vi": "Giăm bông"
+  },
+  "불고기 토핑": {
+   "en": "Bulgogi topping",
+   "ja": "プルコギトッピング",
+   "ar": "إضافة بولغوغي",
+   "vi": "Topping bulgogi"
+  },
+  "올리브": {
+   "en": "Olive",
+   "ja": "オリーブ",
+   "ar": "زيتون",
+   "vi": "Ô liu"
+  },
+  "옥수수": {
+   "en": "Corn",
+   "ja": "コーン",
+   "ar": "ذرة",
+   "vi": "Bắp ngô"
+  },
+  "파프리카": {
+   "en": "Bell pepper",
+   "ja": "パプリカ",
+   "ar": "فلفل رومي",
+   "vi": "Ớt chuông"
+  },
+  "스위트 고구마 폭탄": {
+   "en": "Sweet Potato Bomb",
+   "ja": "スイートポテトボム",
+   "ar": "سويت بوتيتو بومب",
+   "vi": "Sweet Potato Bomb"
+  },
+  "달콤함 주의": {
+   "en": "Sweetness alert",
+   "ja": "甘さにご注意",
+   "ar": "احذر من شدة الحلاوة",
+   "vi": "Coi chừng vị ngọt"
+  },
+  "고구마무스": {
+   "en": "Sweet potato mousse",
+   "ja": "さつまいもムース",
+   "ar": "موس البطاطا الحلوة",
+   "vi": "Mousse khoai lang"
+  },
+  "베이컨 체다 폭탄": {
+   "en": "Bacon Cheddar Bomb",
+   "ja": "ベーコンチェダーボム",
+   "ar": "بيكون شيدر بومب",
+   "vi": "Bacon Cheddar Bomb"
+  },
+  "더블 포테이토 폭탄": {
+   "en": "Double Potato Bomb",
+   "ja": "ダブルポテトボム",
+   "ar": "دبل بوتيتو بومب",
+   "vi": "Double Potato Bomb"
+  },
+  "포테이토 폭탄 주의": {
+   "en": "Potato bomb alert",
+   "ja": "ポテトボムにご注意",
+   "ar": "احذر: قنبلة البطاطس",
+   "vi": "Coi chừng bom khoai tây"
+  },
+  "불향가득 리얼 불고기 폭탄": {
+   "en": "Smoky Real Bulgogi Bomb",
+   "ja": "香ばしいリアルプルコギボム",
+   "ar": "بولغوغي حقيقي بنكهة الشواء بومب",
+   "vi": "Real Bulgogi Bomb vị nướng đậm đà"
+  },
+  "갈릭 치킨 킹 쉬림프 폭탄": {
+   "en": "Garlic Chicken King Shrimp Bomb",
+   "ja": "ガーリックチキン キングシュリンプボム",
+   "ar": "جارليك تشيكن كينغ شريمب بومب",
+   "vi": "Garlic Chicken King Shrimp Bomb"
+  },
+  "국내산 닭고기 폭탄 주의": {
+   "en": "Domestic chicken bomb alert",
+   "ja": "国産鶏肉ボムにご注意",
+   "ar": "احذر: قنبلة الدجاج المحلي",
+   "vi": "Coi chừng bom gà nội địa"
+  },
+  "새우": {
+   "en": "Shrimp",
+   "ja": "エビ",
+   "ar": "روبيان",
+   "vi": "Tôm"
+  },
+  "다이스 닭고기": {
+   "en": "Diced chicken",
+   "ja": "角切りチキン",
+   "ar": "دجاج مقطع مكعبات",
+   "vi": "Gà thái hạt lựu"
+  },
+  "갈릭소스": {
+   "en": "Garlic sauce",
+   "ja": "ガーリックソース",
+   "ar": "صلصة الثوم",
+   "vi": "Sốt tỏi"
+  },
+  "베이컨 킹 쉬림프 포테이토": {
+   "en": "Bacon King Shrimp Potato",
+   "ja": "ベーコン キングシュリンプ ポテト",
+   "ar": "بيكون كينغ شريمب بوتيتو",
+   "vi": "Bacon King Shrimp Potato"
+  },
+  "디아불새": {
+   "en": "Diabulsae (Spicy Fire Chicken)",
+   "ja": "ディアブルセ(激辛ファイヤーチキン)",
+   "ar": "ديابولسي (دجاج حار)",
+   "vi": "Diabulsae (Gà cay lửa)"
+  },
+  "디아블로소스(매운맛)": {
+   "en": "Diablo sauce (spicy)",
+   "ja": "ディアブロソース(辛口)",
+   "ar": "صلصة ديابلو (حارة)",
+   "vi": "Sốt Diablo (vị cay)"
+  },
+  "치즈 오븐 스파게티": {
+   "en": "Cheese Oven Spaghetti",
+   "ja": "チーズオーブンスパゲッティ",
+   "ar": "سباغيتي الجبن بالفرن",
+   "vi": "Mì Ý phô mai nướng"
+  },
+  "콤비 치즈 오븐 스파게티": {
+   "en": "Combi Cheese Oven Spaghetti",
+   "ja": "コンビチーズオーブンスパゲッティ",
+   "ar": "سباغيتي كومبي بالجبن والفرن",
+   "vi": "Mì Ý Combi phô mai nướng"
+  },
+  "베이컨 크림 스파게티": {
+   "en": "Bacon Cream Spaghetti",
+   "ja": "ベーコンクリームスパゲッティ",
+   "ar": "سباغيتي كريمة بالبيكون",
+   "vi": "Mì Ý kem bacon"
+  },
+  "킹 쉬림프 크림 스파게티": {
+   "en": "King Shrimp Cream Spaghetti",
+   "ja": "キングシュリンプクリームスパゲッティ",
+   "ar": "سباغيتي كريمة بالروبيان الكبير",
+   "vi": "Mì Ý kem tôm lớn"
+  },
+  "새우링": {
+   "en": "Shrimp Rings",
+   "ja": "エビリング",
+   "ar": "حلقات الروبيان",
+   "vi": "Tôm chiên vòng"
+  },
+  "치즈볼": {
+   "en": "Cheese Balls",
+   "ja": "チーズボール",
+   "ar": "كرات الجبن",
+   "vi": "Phô mai viên"
+  },
+  "치즈스틱": {
+   "en": "Cheese Sticks",
+   "ja": "チーズスティック",
+   "ar": "أصابع الجبن",
+   "vi": "Phô mai que"
+  },
+  "감자튀김": {
+   "en": "French Fries",
+   "ja": "フライドポテト",
+   "ar": "بطاطس مقلية",
+   "vi": "Khoai tây chiên"
+  },
+  "치킨 가라아게": {
+   "en": "Chicken Karaage",
+   "ja": "チキン唐揚げ",
+   "ar": "دجاج كاراأغي",
+   "vi": "Gà karaage"
+  },
+  "치킨텐더": {
+   "en": "Chicken Tenders",
+   "ja": "チキンテンダー",
+   "ar": "قطع دجاج تندر",
+   "vi": "Gà tender"
+  },
+  "버팔로윙": {
+   "en": "Buffalo Wings",
+   "ja": "バッファローウィング",
+   "ar": "أجنحة بافالو",
+   "vi": "Cánh gà Buffalo"
+  },
+  "점보닭다리": {
+   "en": "Jumbo Drumstick",
+   "ja": "ジャンボ手羽元",
+   "ar": "ساق دجاج جامبو",
+   "vi": "Đùi gà jumbo"
+  },
+  "코카콜라": {
+   "en": "Coca-Cola",
+   "ja": "コカ・コーラ",
+   "ar": "كوكاكولا",
+   "vi": "Coca-Cola"
+  },
+  "스프라이트": {
+   "en": "Sprite",
+   "ja": "スプライト",
+   "ar": "سبرايت",
+   "vi": "Sprite"
+  },
+  "제로 코카콜라": {
+   "en": "Coca-Cola Zero",
+   "ja": "コカ・コーラ ゼロ",
+   "ar": "كوكاكولا زيرو",
+   "vi": "Coca-Cola Zero"
+  },
+  "크러스트(엣지) 변경": {
+   "en": "Change crust (edge)",
+   "ja": "クラスト(エッジ)変更",
+   "ar": "تغيير الحافة",
+   "vi": "Đổi viền bánh"
+  },
+  "치즈 크러스트": {
+   "en": "Cheese crust",
+   "ja": "チーズクラスト",
+   "ar": "حافة الجبن",
+   "vi": "Viền phô mai"
+  },
+  "체다 크러스트": {
+   "en": "Cheddar crust",
+   "ja": "チェダークラスト",
+   "ar": "حافة الشيدر",
+   "vi": "Viền cheddar"
+  },
+  "누드 크러스트": {
+   "en": "Nude crust (filling exposed)",
+   "ja": "ヌードクラスト",
+   "ar": "حافة مكشوفة (نود)",
+   "vi": "Viền nude (nhân để lộ)"
+  },
+  "고구마 크러스트": {
+   "en": "Sweet potato crust",
+   "ja": "さつまいもクラスト",
+   "ar": "حافة البطاطا الحلوة",
+   "vi": "Viền khoai lang"
+  },
+  "황금 크러스트": {
+   "en": "Golden crust",
+   "ja": "ゴールデンクラスト",
+   "ar": "الحافة الذهبية",
+   "vi": "Viền vàng"
+  },
+  "체다, 고구마무스": {
+   "en": "Cheddar, sweet potato mousse",
+   "ja": "チェダー、さつまいもムース",
+   "ar": "شيدر، موس البطاطا الحلوة",
+   "vi": "Cheddar, mousse khoai lang"
+  },
+  "더블 크러스트": {
+   "en": "Double crust",
+   "ja": "ダブルクラスト",
+   "ar": "الحافة المزدوجة",
+   "vi": "Viền đôi"
+  },
+  "치즈, 고구마무스": {
+   "en": "Cheese, sweet potato mousse",
+   "ja": "チーズ、さつまいもムース",
+   "ar": "جبن، موس البطاطا الحلوة",
+   "vi": "Phô mai, mousse khoai lang"
+  },
+  "토핑 추가": {
+   "en": "Add toppings",
+   "ja": "トッピング追加",
+   "ar": "إضافات",
+   "vi": "Thêm topping"
+  },
+  "치즈 추가": {
+   "en": "Extra cheese",
+   "ja": "チーズ追加",
+   "ar": "جبنة إضافية",
+   "vi": "Thêm phô mai"
+  },
+  "80g": {
+   "en": "80g",
+   "ja": "80g",
+   "ar": "80 غ",
+   "vi": "80g"
+  },
+  "100g": {
+   "en": "100g",
+   "ja": "100g",
+   "ar": "100 غ",
+   "vi": "100g"
+  },
+  "체다치즈 추가": {
+   "en": "Extra cheddar",
+   "ja": "チェダーチーズ追加",
+   "ar": "شيدر إضافي",
+   "vi": "Thêm cheddar"
+  },
+  "불고기 추가": {
+   "en": "Extra bulgogi",
+   "ja": "プルコギ追加",
+   "ar": "بولغوغي إضافي",
+   "vi": "Thêm bulgogi"
+  },
+  "50g": {
+   "en": "50g",
+   "ja": "50g",
+   "ar": "50 غ",
+   "vi": "50g"
+  },
+  "페퍼로니 추가": {
+   "en": "Extra pepperoni",
+   "ja": "ペパロニ追加",
+   "ar": "بيبروني إضافي",
+   "vi": "Thêm pepperoni"
+  },
+  "베이컨 추가": {
+   "en": "Extra bacon",
+   "ja": "ベーコン追加",
+   "ar": "بيكون إضافي",
+   "vi": "Thêm bacon"
+  },
+  "옥수수 추가": {
+   "en": "Extra corn",
+   "ja": "コーン追加",
+   "ar": "ذرة إضافية",
+   "vi": "Thêm bắp ngô"
+  },
+  "올리브 추가": {
+   "en": "Extra olives",
+   "ja": "オリーブ追加",
+   "ar": "زيتون إضافي",
+   "vi": "Thêm ô liu"
+  },
+  "야채 추가 (양파, 파프리카, 새송이)": {
+   "en": "Extra vegetables (onion, bell pepper, king oyster mushroom)",
+   "ja": "野菜追加(玉ねぎ、パプリカ、エリンギ)",
+   "ar": "خضار إضافية (بصل، فلفل رومي، فطر)",
+   "vi": "Thêm rau (hành tây, ớt chuông, nấm đùi gà)"
+  },
+  "새우 추가": {
+   "en": "Extra shrimp",
+   "ja": "エビ追加",
+   "ar": "روبيان إضافي",
+   "vi": "Thêm tôm"
+  },
+  "2마리": {
+   "en": "2 pcs",
+   "ja": "2尾",
+   "ar": "قطعتان",
+   "vi": "2 con"
+  },
+  "4마리": {
+   "en": "4 pcs",
+   "ja": "4尾",
+   "ar": "4 قطع",
+   "vi": "4 con"
+  },
+  "8마리": {
+   "en": "8 pcs",
+   "ja": "8尾",
+   "ar": "8 قطع",
+   "vi": "8 con"
+  },
+  "소스·피클 추가": {
+   "en": "Extra sauces & pickles",
+   "ja": "ソース・ピクルス追加",
+   "ar": "صلصات ومخللات إضافية",
+   "vi": "Thêm sốt & dưa chuột muối"
+  },
+  "핫소스": {
+   "en": "Hot sauce",
+   "ja": "ホットソース",
+   "ar": "صلصة حارة",
+   "vi": "Sốt cay"
+  },
+  "갈릭디핑소스": {
+   "en": "Garlic dipping sauce",
+   "ja": "ガーリックディップソース",
+   "ar": "صلصة غمس الثوم",
+   "vi": "Sốt tỏi chấm"
+  },
+  "피클": {
+   "en": "Pickles",
+   "ja": "ピクルス",
+   "ar": "مخلل",
+   "vi": "Dưa chuột muối"
+  },
+  "파마산치즈": {
+   "en": "Parmesan cheese",
+   "ja": "パルメザンチーズ",
+   "ar": "جبنة بارميزان",
+   "vi": "Phô mai parmesan"
+  },
+  "할라피뇨피클": {
+   "en": "Jalapeño pickles",
+   "ja": "ハラペーニョピクルス",
+   "ar": "مخلل هالبينو",
+   "vi": "Ớt jalapeño muối"
+  }
+ }
 }
