@@ -223,7 +223,7 @@ test('데이터 무결성', () => {
   const d = fresh();
   const ids = d.menu.items.map((i) => i.id);
   assert.equal(new Set(ids).size, ids.length, '메뉴 ID 중복');
-  assert.equal(d.menu.items.length, 27);
+  assert.equal(d.menu.items.length, 28);
   // 판매 가격은 모두 확정 상태
   for (const it of d.menu.items) {
     for (const s of it.sizes) {
