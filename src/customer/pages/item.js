@@ -6,6 +6,7 @@ import { stepper } from '../components/stepper.js';
 import { dietAllows } from '../../shared/lib/diet.js';
 import { thumb } from '../components/thumb.js';
 import { optionPicker } from '../components/options.js';
+import { removalSection } from '../components/removal.js';
 import { breakdownTable } from '../components/breakdown.js';
 
 export function itemPage(ctx, { id }) {
@@ -15,7 +16,8 @@ export function itemPage(ctx, { id }) {
     return h('div', { class: 'page empty' }, t('item.none'), h('a', { href: '#/' }, t('item.back')));
   }
   const sizes = item.sizes.filter(isPriced);
-  const sel = { size: sizes[0]?.id, qty: 1, options: { crust: null, toppings: {} } };
+  const sel = { size: sizes[0]?.id, qty: 1, options: { crust: null, toppings: {} }, removals: [] };
+  const removal = removalSection(data, () => [item], sel, () => refresh());
   const hasOptions = allowedGroups(data, item).some((g) => g.scope !== 'order');
 
   const sizeBox = h('div', { class: 'seg' });
@@ -42,7 +44,7 @@ export function itemPage(ctx, { id }) {
   };
 
   addBtn.addEventListener('click', () => {
-    addLine({ itemId: item.id, size: sel.size, qty: sel.qty, options: sel.options });
+    addLine({ itemId: item.id, size: sel.size, qty: sel.qty, options: sel.options, removals: [...sel.removals] });
     ctx.toast(t('add.toast'));
     ctx.go('/');
   });
@@ -57,6 +59,7 @@ export function itemPage(ctx, { id }) {
     item.description && item.descriptionStatus !== 'needs_check' ? h('p', { class: 'menu-desc' }, tx(item.description)) : null,
     item.ingredients?.length ? h('p', { class: 'menu-ing' }, t('menu.ingredients', { list: item.ingredients.map(tx).join(', ') })) : null,
     showSizes ? h('section', { class: 'section' }, h('h2', { class: 'section-title' }, t('size')), sizeBox) : null,
+    removal.node,
     optBox,
     h('section', { class: 'section row' }, h('h2', { class: 'section-title' }, t('qty')),
       stepper({ value: 1, min: 1, max: 20, onChange: (v) => { sel.qty = v; refresh(); } })),

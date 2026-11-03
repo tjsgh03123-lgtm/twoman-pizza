@@ -581,6 +581,48 @@
    "ja": "このサイトはトゥーマンピザの公式サイトではなく、メニュー選び(ご注文)をお手伝いするためのサイトです。",
    "ar": "هذا ليس الموقع الرسمي لتومان بيتزا، بل أداة تساعدك على اختيار طلبك فقط.",
    "vi": "Đây không phải trang web chính thức của Twoman Pizza, chỉ là công cụ giúp bạn chọn món để đặt hàng."
+  },
+  "removal.title": {
+   "ko": "고기 빼기 요청",
+   "en": "Ask to remove meat",
+   "ja": "お肉を抜くリクエスト",
+   "ar": "طلب إزالة اللحم",
+   "vi": "Yêu cầu bỏ thịt"
+  },
+  "removal.hint": {
+   "ko": "체크한 재료를 빼 달라는 요청이 직원에게 전달돼요. 가격은 그대로예요.",
+   "en": "Your request to leave out the checked ingredients is shown to the staff. The price stays the same.",
+   "ja": "チェックした材料を抜くリクエストがスタッフに伝わります。価格は変わりません。",
+   "ar": "سيظهر للموظف طلبك بإزالة المكونات المحددة. السعر لا يتغير.",
+   "vi": "Yêu cầu bỏ các nguyên liệu đã chọn sẽ được hiển thị cho nhân viên. Giá không đổi."
+  },
+  "removal.locked": {
+   "ko": "돼지고기 제외 선택으로 자동 선택됐어요.",
+   "en": "Selected automatically because you chose no pork.",
+   "ja": "豚肉なしを選んだため自動で選択されています。",
+   "ar": "تم تحديده تلقائيًا لأنك اخترت بدون لحم الخنزير.",
+   "vi": "Tự động chọn vì bạn đã chọn không ăn thịt heo."
+  },
+  "removal.item": {
+   "ko": "{name} 빼기",
+   "en": "No {name}",
+   "ja": "{name}を抜く",
+   "ar": "بدون {name}",
+   "vi": "Bỏ {name}"
+  },
+  "line.remove": {
+   "ko": "★ 빼 주세요: {list}",
+   "en": "★ Please leave out: {list}",
+   "ja": "★ 抜いてください: {list}",
+   "ar": "★ يرجى إزالة: {list}",
+   "vi": "★ Vui lòng bỏ: {list}"
+  },
+  "menu.removable": {
+   "ko": "돼지고기 빼고 주문",
+   "en": "Order without pork",
+   "ja": "豚肉を抜いて注文",
+   "ar": "اطلب بدون لحم الخنزير",
+   "vi": "Đặt không thịt heo"
   }
  },
  "content": {

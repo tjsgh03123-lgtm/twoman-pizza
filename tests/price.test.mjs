@@ -16,6 +16,7 @@ const raw = () => ({
   options: read('options'),
   halfHalf: read('half-half-rules'),
   pricing: read('pricing-rules'),
+  diet: read('diet-rules'),
 });
 const fresh = (ov = {}) => applyOverrides(raw(), ov);
 
@@ -243,4 +244,23 @@ test('데이터 무결성', () => {
   assert.equal(JSON.stringify(d).includes('중부대로'), false);
   // 세트·옛날 떡볶이는 없다
   assert.equal(ids.some((i) => i.startsWith('set-') || i.includes('tteokbokki')), false);
+});
+
+test('고기 빼기: 설명 줄 + 돼지고기 판별', async () => {
+  const { describeLine } = await import('../src/shared/lib/price.js');
+  const { itemHasPork, removableIngredients, lineHasPork, canRemovePork } = await import('../src/shared/lib/diet.js');
+  const { lineSignature } = await import('../src/shared/lib/cart.js');
+  const d = fresh();
+  const item = d.index.items['pizza-super-combination-bomb'];
+  assert.deepEqual(removableIngredients(d, item), ['페퍼로니(조각당 2개)', '햄', '불고기 토핑']);
+  assert.equal(canRemovePork(d, item), true);
+  const rem = ['페퍼로니(조각당 2개)', '햄'];
+  assert.equal(itemHasPork(d, item), true);
+  assert.equal(itemHasPork(d, item, rem), false);
+  const line = { itemId: item.id, size: 'L', qty: 1, options: { crust: null, toppings: {} }, removals: rem };
+  assert.equal(lineHasPork(d, line), false);
+  assert.ok(describeLine(d, line).sub.includes('★ 빼 주세요: 페퍼로니(조각당 2개), 햄'));
+  assert.notEqual(lineSignature(line), lineSignature({ ...line, removals: [] }));
+  // 고기를 빼도 가격은 그대로
+  assert.equal(priceLine(d, line).total, priceLine(d, { ...line, removals: [] }).total);
 });

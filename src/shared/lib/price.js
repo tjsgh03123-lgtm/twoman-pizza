@@ -147,6 +147,7 @@ const KO = {
   half: (names) => `반반피자 (${names.join(' + ')})`,
   crust: (name, price) => `크러스트: ${name} (+${price})`,
   topping: (name, unit, qty, price) => `토핑: ${name}${unit} x${qty} (+${price})`,
+  remove: (list) => `★ 빼 주세요: ${list.join(', ')}`,
 };
 
 export function describeLine(data, line, tr = KO) {
@@ -167,6 +168,7 @@ export function describeLine(data, line, tr = KO) {
     const unit = c.unit ? ` ${tr.name(c.unit)}` : '';
     sub.push(tr.topping(tr.name(c.name), unit, qty, tr.money(c.price * qty)));
   }
+  if (line.removals?.length) sub.push(tr.remove(line.removals.map((n) => tr.name(n))));
   return { title, sub };
 }
 

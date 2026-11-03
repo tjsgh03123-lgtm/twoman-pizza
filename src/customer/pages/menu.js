@@ -2,7 +2,7 @@ import { h } from '../../shared/lib/dom.js';
 import { t, tx, money, sizeText } from '../../shared/lib/i18n.js';
 import { isPriced, isOrderable } from '../../shared/lib/price.js';
 import { thumb } from '../components/thumb.js';
-import { noPork, dietAllows } from '../../shared/lib/diet.js';
+import { noPork, dietAllows, itemHasPork } from '../../shared/lib/diet.js';
 
 let activeCat = null; // 탭 선택 기억 (화면을 오가도 유지)
 
@@ -54,7 +54,8 @@ export function menuPage(ctx) {
           },
             thumb(item),
             h('div', { class: 'menu-body' },
-              h('strong', { class: 'menu-name' }, tx(item.name), sold ? h('span', { class: 'badge' }, t('menu.soldout')) : null),
+              h('strong', { class: 'menu-name' }, tx(item.name), sold ? h('span', { class: 'badge' }, t('menu.soldout')) : null,
+                noPork() && itemHasPork(data, item) ? h('span', { class: 'badge info' }, t('menu.removable')) : null),
               item.description && item.descriptionStatus !== 'needs_check' ? h('p', { class: 'menu-desc' }, tx(item.description)) : null,
               ing ? h('p', { class: 'menu-ing' }, t('menu.ingredients', { list: ing })) : null,
               h('p', { class: 'menu-price' }, priceText(data, item)),

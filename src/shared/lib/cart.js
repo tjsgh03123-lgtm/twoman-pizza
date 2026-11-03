@@ -23,6 +23,7 @@ export function lineSignature(line) {
     [...(line.halfFlavors || [])].sort(),
     line.options?.crust || null,
     toppings,
+    [...(line.removals || [])].sort(),
   ]);
 }
 

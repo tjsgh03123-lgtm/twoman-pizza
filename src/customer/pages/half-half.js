@@ -6,6 +6,7 @@ import { stepper } from '../components/stepper.js';
 import { dietAllows } from '../../shared/lib/diet.js';
 import { thumb } from '../components/thumb.js';
 import { optionPicker } from '../components/options.js';
+import { removalSection } from '../components/removal.js';
 import { breakdownTable } from '../components/breakdown.js';
 
 export function halfHalfPage(ctx) {
@@ -13,7 +14,8 @@ export function halfHalfPage(ctx) {
   const item = data.index.items['half-half'];
   if (!item || item.visible === false) return h('div', { class: 'page empty' }, t('hh.unavailable'), h('a', { href: '#/' }, t('app.toMenu')));
   const sizes = ['M', 'L'].filter((s) => Number.isFinite(data.halfHalf.basePrice?.[s]));
-  const sel = { size: sizes[0], qty: 1, flavors: [], options: { crust: null, toppings: {} } };
+  const sel = { size: sizes[0], qty: 1, flavors: [], options: { crust: null, toppings: {} }, removals: [] };
+  const removal = removalSection(data, () => sel.flavors.map((id) => data.index.items[id]), sel, () => refresh());
   const flavors = halfHalfFlavors(data).filter(({ item: fi }) => dietAllows(data, fi));
 
   const sizeBox = h('div', { class: 'seg' });
@@ -23,6 +25,7 @@ export function halfHalfPage(ctx) {
   const guide = h('p', { class: 'hint' });
 
   const refresh = () => {
+    removal.update();
     sizeBox.replaceChildren(...sizes.map((s) => h('button', {
       type: 'button', class: `seg-btn${s === sel.size ? ' is-active' : ''}`,
       onclick: () => { sel.size = s; refresh(); },
@@ -54,7 +57,7 @@ export function halfHalfPage(ctx) {
   };
 
   addBtn.addEventListener('click', () => {
-    addLine({ itemId: item.id, size: sel.size, qty: sel.qty, halfFlavors: [...sel.flavors], options: sel.options });
+    addLine({ itemId: item.id, size: sel.size, qty: sel.qty, halfFlavors: [...sel.flavors], options: sel.options, removals: [...sel.removals] });
     ctx.toast(t('add.toast'));
     ctx.go('/');
   });
@@ -66,6 +69,7 @@ export function halfHalfPage(ctx) {
     item.description ? h('p', { class: 'menu-desc' }, tx(item.description)) : null,
     h('section', { class: 'section' }, h('h2', { class: 'section-title' }, t('size')), sizeBox),
     h('section', { class: 'section' }, h('h2', { class: 'section-title' }, t('hh.pick'), h('small', null, ` ${t('hh.two')}`)), flavorBox, guide),
+    removal.node,
     optionPicker(data, item, sel, refresh),
     h('section', { class: 'section row' }, h('h2', { class: 'section-title' }, t('qty')),
       stepper({ value: 1, min: 1, max: 20, onChange: (v) => { sel.qty = v; refresh(); } })),

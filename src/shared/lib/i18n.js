@@ -100,4 +100,5 @@ export const lineTr = () => ({
   half: (names) => t('hh.label', { list: names.join(' + ') }),
   crust: (name, price) => t('line.crust', { name, price }),
   topping: (name, unit, qty, price) => t('line.topping', { name, unit, qty, price }),
+  remove: (list) => t('line.remove', { list: list.join(', ') }),
 });
